@@ -1,8 +1,8 @@
-# Client - iOS Documentation
+# Client - iOS App Documentation
 
 ## Building the Docs
 
-The iOS Client documentation is not built independently. Instead, it is built together with the [server documentation](https://github.com/owncloud/docs/). However, you can build a local copy of the iOS client documentation to preview changes you are making.
+The iOS Client documentation is not built independently. Instead, it is built together with the [server documentation](https://github.com/owncloud/docs/). However, you can build a local copy of the iOS App documentation to preview changes you are making.
 
 Whenever a Pull Request of this repo gets merged, it automatically triggers a full docs build.
 
