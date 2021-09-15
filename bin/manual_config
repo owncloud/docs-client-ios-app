@@ -8,5 +8,5 @@
 MANUAL_ROOT_NAME="ROOT"
 # the postfix component is used to create the path to the manual like admin_manual 
 MANUAL_POSTFIX_NAME=""
-AVAILABLE_MANUALS=(Desktop_Client)
+AVAILABLE_MANUALS=(IOS_Client)
 
