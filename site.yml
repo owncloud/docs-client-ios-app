@@ -23,7 +23,7 @@ asciidoc:
     idprefix: ''
     idseparator: '-'
     experimental: ''
-    latest-ios-app-version: 2.9
+    latest-ios-app-version: 11.7
     previous-ios-app-version: 
   extensions:
     - ./lib/extensions/tabs.js
