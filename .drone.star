@@ -1,7 +1,7 @@
 def main(ctx):
     # Config
 
-    environment = "desktop"
+    environment = "ios-app"
 
     # Version shown as latest in generated documentations
     # It's fine that this is out of date in version branches, usually just needs
