@@ -1,5 +1,5 @@
-name: desktop
-title: Desktop Client
+name: ios-app
+title: Mobile App for iOS (iOS 11+)
 version: 'next'
 start_page: ROOT:index.adoc
 nav:

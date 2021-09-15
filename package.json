@@ -1,17 +1,17 @@
 {
   "private": true,
   "name": "owncloud-ios",
-  "description": "The ownCloud IOS documentation",
+  "description": "The ownCloud iOS documentation",
   "version": "1.0.0",
   "license": "AGPL-3.0",
   "author": "The ownCloud Team <docs@owncloud.com>",
-  "homepage": "https://github.com/owncloud/docs-client-desktop#readme",
+  "homepage": "https://github.com/owncloud/docs-client-ios-app#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/owncloud/docs-client-desktop.git"
+    "url": "git+https://github.com/owncloud/docs-client-ios-app.git"
   },
   "bugs": {
-    "url": "https://github.com/owncloud/docs-client-desktop/issues"
+    "url": "https://github.com/owncloud/docs-client-ios-app/issues"
   },
   "contributors": [
     {
