@@ -1,8 +1,8 @@
-# Client - Desktop Documentation
+# Client - IOS Documentation
 
 ## Building the Docs
 
-The Desktop Client documentation is not built independently. Instead, it is built together with the [server documentation](https://github.com/owncloud/docs/). However, you can build a local copy of the desktop client documentation to preview changes you are making.
+The IOS Client documentation is not built independently. Instead, it is built together with the [server documentation](https://github.com/owncloud/docs/). However, you can build a local copy of the IOS client documentation to preview changes you are making.
 
 Whenever a Pull Request of this repo gets merged, it automatically triggers a full docs build.
 
