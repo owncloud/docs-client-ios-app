@@ -24,7 +24,7 @@ asciidoc:
     idseparator: '-'
     experimental: ''
     latest-ios-app-version: 11.7
-    previous-ios-app-version: 
+    previous-ios-app-version: 11.7
   extensions:
     - ./lib/extensions/tabs.js
     - ./node_modules/asciidoctor-kroki/src/asciidoctor-kroki.js

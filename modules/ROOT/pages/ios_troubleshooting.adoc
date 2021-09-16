@@ -107,7 +107,7 @@ If you need to check the traffic between ownCloud and the iOS App, we recommend 
 {mitmproxy-url}[mitmproxy] is an interactive man-in-the-middle proxy for HTTP and HTTPS with a console interface.
 At ownCloud, we use it a lot to investigate every detail of HTTP requests and responses.
 
-image:https://mitmproxy.org/screenshot.png[mitmproxy sample output]
+image:mitmproxy_screenshot.png[mitmproxy sample output]
 
 === Charles for iOS
 
