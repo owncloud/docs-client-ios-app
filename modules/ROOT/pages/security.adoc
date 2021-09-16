@@ -58,7 +58,7 @@ After performing auto-detection, identified authentication methods are filtered 
 
 NOTE: By default, all detected methods are considered and OAuth2 ranks higher than Basic Authentication.
 
-Filtering and ranking can be customized by xref:mdm.adoc[MDM Configuration]. This, for example, allows making OAuth2 the only possible authentication method, so no credentials need to be stored on the device.
+Filtering and ranking can be customized by xref:appendices/mdm.adoc[MDM Configuration]. This, for example, allows making OAuth2 the only possible authentication method, so no credentials need to be stored on the device.
 
 === OAuth2 Implementation
 
@@ -72,7 +72,7 @@ The OAuth2 implementation uses {sfauthenticationsession-url}[`SFAuthenticationSe
 
 === URL Limits
 
-Using xref:mdm.adoc[MDM Configuration], server URLs can be pre-filled or "hard-coded" as the only allowed server URL.
+Using xref:appendices/mdm.adoc[MDM Configuration], server URLs can be pre-filled or "hard-coded" as the only allowed server URL.
 
 === Redirects
 
@@ -88,7 +88,7 @@ If a SSL/TLS certificate fails trust evaluation (e.g., because it's self-signed 
 * Trust the certificate, despite the warnings, by clicking btn:[Approve].
 * Reject the certificate, by clicking btn:[Cancel].
 
-image:04_cert_error.png[Review SSL/TLS certificates in the ownCloud iOS app., width=40%,pdfwidth=40%]
+image:security/04_cert_error.png[Review SSL/TLS certificates in the ownCloud iOS app., width=40%,pdfwidth=40%]
 
 In the case of redirects across several HTTPS servers, users are given the opportunity to review the certificates of all servers involved in addition to the redirects.
 
@@ -131,8 +131,8 @@ HTML and Microsoft Office document content is viewed using {apple-wkwebview-url}
 
 === Passcode
 
-Users can set a Passcode to control access to the app. Find out more about this in
-xref:settings.adoc#passcode[the Passcode section of the Settings documentation].
+Users can set a Passcode to control access to the app. Find out more about this in the
+xref:settings.adoc#passcode[Passcode section of the Settings documentation].
 
 == Miscellaneous
 
@@ -156,4 +156,4 @@ When logging information, parts of the log message can be tagged as private. If 
 
 An example for the latter would be an `NSError` object's error message containing the names of the item it is about. If masked, only the error's error domain and error code are written to the log, but not the error message.
 
-image:masking-private-data.png[, width=40%,pdfwidth=40%]
+image:security/masking-private-data.png[, width=40%,pdfwidth=40%]

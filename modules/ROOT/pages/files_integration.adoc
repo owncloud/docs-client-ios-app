@@ -30,11 +30,11 @@ When the iOS app is installed and at least one account is properly configured, f
 |===
 a|
 .Enable the ownCloud app as an iOS Files app location
-image:enable-location.png[Enable the ownCloud app as an iOS Files app location, width=60%,pdfwidth=60%]
+image:files_integration/enable-location.png[Enable the ownCloud app as an iOS Files app location, width=60%,pdfwidth=60%]
 a|
 .Pick a file to "Save to Files"
-image:share-files-from-other-apps-step-1.png[Pick a file to Save to Files, width=60%,pdfwidth=60%]
+image:files_integration/share-files-from-other-apps-step-1.png[Pick a file to Save to Files, width=60%,pdfwidth=60%]
 a|
 .Pick the location to save the file and click "Add"
-image:share-files-from-other-apps-step-2.png[Pick the location to save the file and click Add, width=60%,pdfwidth=60%]
+image:files_integration/share-files-from-other-apps-step-2.png[Pick the location to save the file and click Add, width=60%,pdfwidth=60%]
 |===

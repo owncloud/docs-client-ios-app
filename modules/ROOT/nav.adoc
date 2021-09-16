@@ -1,3 +1,4 @@
+* xref:index.adoc[Introduction]
 * xref:installation.adoc[Getting the ownCloud iOS App]
 * xref:accounts.adoc[Managing User Accounts]
 * xref:settings.adoc[Configure Settings]
@@ -10,5 +11,5 @@
 * xref:security.adoc[Security]
 * xref:faq.adoc[Frequently Asked Questions (FAQ)]
 * xref:appendices/index.adoc[Appendices]
-** xref:mdm.adoc[Mobile Device Management (MDM)]
-** xref:troubleshooting.adoc[Troubleshooting]
+** xref:appendices/mdm.adoc[Mobile Device Management (MDM)]
+** xref:appendices/troubleshooting.adoc[Troubleshooting]
