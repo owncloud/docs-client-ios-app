@@ -1,4 +1,5 @@
 = Quick Access
+:page-aliases: ios_quick_access.adoc
 :toc: right
 :keywords: shares, collection, recently access files, quick access, ownCloud, iOS, iPhone, iPad
 :description: This guide steps you through how to use the Quick Access functionality of ownCloud's Mobile App for iOS.
@@ -35,7 +36,7 @@ Files marked as favorite::
 See a list of all resources in your account set as favourite.
 
 Files available offline::
-See a list of all files and folders in your account that are xref:ios_available_offline.adoc[available offline].
+See a list of all files and folders in your account that are xref:available_offline.adoc[available offline].
 
 Image files::
 See a list of all image files in your account.

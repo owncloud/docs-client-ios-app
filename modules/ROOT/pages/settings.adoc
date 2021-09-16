@@ -1,4 +1,5 @@
 = Configure Settings
+:page-aliases: ios_settings.adoc
 :toc: right
 :toclevels: 1
 :keywords: settings, passcode lock, biometric lock, theme, logging, ownCloud, iOS, iPhone, iPad
@@ -85,7 +86,7 @@ When System Appearance is selected, ownCloud will automatically use the selected
 == Logging
 
 The ownCloud iOS app has built-in logging functionality, available under menu:Settings[Logging]. To find out more, please refer to the
-xref:ios_troubleshooting.adoc#capturing-app-debug-logs[logging section of the Troubleshooting guide].
+xref:troubleshooting.adoc#capturing-app-debug-logs[logging section of the Troubleshooting guide].
 
 == Media Upload (Conversion)
 

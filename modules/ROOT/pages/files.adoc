@@ -1,4 +1,5 @@
 = Managing Files
+:page-aliases: ios_files.adoc
 :toc: right
 :toclevels: 1
 :keywords: PDF, Drag & Drop, Photo Library, iPhone, iPad, ownCloud iOS App
@@ -171,7 +172,7 @@ To upload files or any time from your device to your ownCloud server, click btn:
 
 === Make Available Offline
 
-Please see the xref:ios_available_offline.adoc[Offline Storage section].
+Please see the xref:available_offline.adoc[Offline Storage section].
 
 ==== Upload File From Your Photo Library
 

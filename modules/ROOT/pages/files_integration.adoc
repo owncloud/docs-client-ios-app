@@ -1,4 +1,5 @@
 = iOS App and iOS Files App Integration and 3rd Party Apps
+:page-aliases: ios_files_integration.adoc
 :toc: right
 :keywords: Files App, iOS, iPhone, iPad, ownCloud
 :description: This guide steps you through ownCloud's Mobile App for iOS’s integration with the iOS Files App.

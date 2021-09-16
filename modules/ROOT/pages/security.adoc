@@ -1,4 +1,5 @@
 = Security
+:page-aliases: ios_security.adoc
 :toc: right
 :toclevels: 1
 :keywords: ownCloud, security, encryption, mdm, ssl, tls, oauth2, authentication, ios, iphone, ipad
@@ -57,7 +58,7 @@ After performing auto-detection, identified authentication methods are filtered 
 
 NOTE: By default, all detected methods are considered and OAuth2 ranks higher than Basic Authentication.
 
-Filtering and ranking can be customized by xref:ios_mdm.adoc[MDM Configuration]. This, for example, allows making OAuth2 the only possible authentication method, so no credentials need to be stored on the device.
+Filtering and ranking can be customized by xref:mdm.adoc[MDM Configuration]. This, for example, allows making OAuth2 the only possible authentication method, so no credentials need to be stored on the device.
 
 === OAuth2 Implementation
 
@@ -71,7 +72,7 @@ The OAuth2 implementation uses {sfauthenticationsession-url}[`SFAuthenticationSe
 
 === URL Limits
 
-Using xref:ios_mdm.adoc[MDM Configuration], server URLs can be pre-filled or "hard-coded" as the only allowed server URL.
+Using xref:mdm.adoc[MDM Configuration], server URLs can be pre-filled or "hard-coded" as the only allowed server URL.
 
 === Redirects
 
@@ -131,7 +132,7 @@ HTML and Microsoft Office document content is viewed using {apple-wkwebview-url}
 === Passcode
 
 Users can set a Passcode to control access to the app. Find out more about this in
-xref:ios_settings.adoc#passcode[the Passcode section of the Settings documentation].
+xref:settings.adoc#passcode[the Passcode section of the Settings documentation].
 
 == Miscellaneous
 

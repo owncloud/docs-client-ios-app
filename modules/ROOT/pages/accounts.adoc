@@ -1,4 +1,5 @@
 = Managing User Accounts
+:page-aliases: ios_accounts.adoc
 :toc: right
 :toclevels: 1
 :keywords: user accounts, OAuth2 authentication, basic authentication, ownCloud iOS App

@@ -1,4 +1,5 @@
 = Mobile Device Management (MDM)
+:page-aliases: ios_mdm.adoc
 :toc: right
 :keywords: ownCloud, MDM, Mobile Device Management, iOS, iPhone, iPad
 :description: This guide steps you through how to manage the application configuration of ownCloud’s Mobile App for iOS using Mobile Device Management (MDM).

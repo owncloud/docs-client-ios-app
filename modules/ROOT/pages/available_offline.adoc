@@ -1,4 +1,6 @@
 = Offline Files and Folders
+:page-aliases: ios_available_offline.adoc
+:toc: right
 
 == Introduction
 

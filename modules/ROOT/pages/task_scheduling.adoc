@@ -1,4 +1,6 @@
 = Task Scheduling
+:page-aliases: ios_task_scheduling.adoc
+:toc: right
 
 == Introduction
 
