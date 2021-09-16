@@ -1,4 +1,5 @@
 = Getting the ownCloud iOS App
+:page-aliases: ios_installation.adoc
 :toc: right
 :keywords: ownCloud, download, install, iOS, iPhone, iPad
 :description: This guide steps you through how to install the ownCloud iOS app for iPhone and iPad.

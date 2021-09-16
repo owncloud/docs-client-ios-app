@@ -31,13 +31,13 @@ Some settings are accessed only once at runtime and the read value is cached, so
 
 There are few settings allowing to mark an app installation as BETA and e.g. to supress UIKit animation and review prompt.
 
-include::./ios_mdm_tables.adoc[tag=app]
+include::./mdm_tables.adoc[tag=app]
 
 ==== Extensions / Actions
 
 ownCloud app uses internally a plug-in like mechanism called extensions. Extensions are used to implement menu actions mostly found under "+" menu allowing to add new items (Upload media, take photo etc.) or in more menu (Copy, Move, Open in etc.). Using below settings actions / extensions can be disabled. Extensions are enabled by default, however this might depend on licensing requirements of a particular extension.
 
-include::./ios_mdm_tables.adoc[tag=actions]
+include::./mdm_tables.adoc[tag=actions]
 
 (*) These extensions might require additional license (in-app purchase, enterprise version).
 
@@ -45,47 +45,47 @@ include::./ios_mdm_tables.adoc[tag=actions]
 
 To customize file list UI behevior, following settings are available: 
 
-// include::./ios_mdm_tables.adoc[tag=displaysettings]
+// include::./mdm_tables.adoc[tag=displaysettings]
 
 ==== Passcode Enforcement
 
 If your organization policies require users to use a passcode as an additional security barrier for managed apps, the below setting will allow to enforce this requirement.
 
-include::./ios_mdm_tables.adoc[tag=passcode]
+include::./mdm_tables.adoc[tag=passcode]
 
 ==== Bookmark
 
 Below settings allow to configure the app to use a certain server URL and even bind it to this URL only by setting the default non-editable.
 
-include::./ios_mdm_tables.adoc[tag=bookmarks]
+include::./mdm_tables.adoc[tag=bookmarks]
 
 ==== Item Policies
 
-include::./ios_mdm_tables.adoc[tag=policies]
+include::./mdm_tables.adoc[tag=policies]
 
 ==== Connection
 
 Settings concerinng HTTP user agent, cookies, background support etc.
 
-include::./ios_mdm_tables.adoc[tag=connection]
+include::./mdm_tables.adoc[tag=connection]
 
 ===== Server Endpoints
 
 Individually configurable endpoints of the ownCloud server instance.
 
-include::./ios_mdm_tables.adoc[tag=endpoints]
+include::./mdm_tables.adoc[tag=endpoints]
 
 ===== Connection Authentication / Security
 
 Settings concerning certificate validation policies.
 
-include::./ios_mdm_tables.adoc[tag=security]
+include::./mdm_tables.adoc[tag=security]
 
 ===== OAuth2 Based Authentication
 
 Settings allowing to configure OAuth2 based authentication.
 
-include::./ios_mdm_tables.adoc[tag=oauth2]
+include::./mdm_tables.adoc[tag=oauth2]
 
 ////
 ==== Shortcuts
@@ -95,14 +95,14 @@ for certain actions. ownCloud app provides certain actions as shortcuts as well 
 account information, create folder and so on). However in some cases it might make sense to disable
 shortcuts to minimize security risks. It can be done using following option:
 
-include::./ios_mdm_tables.adoc[tag=shortcuts]
+include::./mdm_tables.adoc[tag=shortcuts]
 ////
 
 ==== Logging
 
 Logging settings control the ammount and type of app internal log messages stored as text files and accessible via settings menu.
 
-include::./ios_mdm_tables.adoc[tag=logging]
+include::./mdm_tables.adoc[tag=logging]
 
 == AppConfig XML Schema
 
