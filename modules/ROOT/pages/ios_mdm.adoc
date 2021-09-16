@@ -6,6 +6,7 @@
 :mdm-protocol-ref-url: https://developer.apple.com/business/documentation/MDM-Protocol-Reference.pdf
 :appconfig-url: https://www.appconfig.org
 :appconfig-jam-url: https://appconfig.jamfresearch.com
+:mdm-protocol-refernce-url: https://developer.apple.com/business/documentation/MDM-Protocol-Reference.pdf
 
 == Introduction
 
@@ -131,4 +132,4 @@ AppConfig conformant spec file tailored to administrator needs and containing on
 == References
 
 * {appconfig-url}[Introducing The AppConfig Community]
-* https://developer.apple.com/business/documentation/MDM-Protocol-Reference.pdf[Mobile Device Management Protocol Reference]
+* {mdm-protocol-refernce-url}[Mobile Device Management Protocol Reference]

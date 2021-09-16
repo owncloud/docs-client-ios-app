@@ -7,7 +7,7 @@ This section shows how to collaborate with other users and how to work with link
 
 == Collaborate With Other Users on Files and Folders
 
-image:31_Collab.png[Collaborate With Other Users on Folders and Files, width=40%]
+image:31_Collab.png[Collaborate With Other Users on Folders and Files, width=60%,pdfwidth=60%]
 
 The Mobile App for iOS supports the following collaboration functionality:
 
@@ -41,17 +41,17 @@ As with the web interface, you can set:
 * Link permissions
 * xref:set-passwords-and-expiration-dates[A link password and expiration date]
 
-image:manage-public-link-settings.png[Manage public links in ownCloud's Mobile App for iOS, width=40%]
+image:manage-public-link-settings.png[Manage public links in ownCloud's Mobile App for iOS, width=60%,pdfwidth=60%]
 
 TIP: To see more details about each option, click the info icon in the bottom right-hand corner.
 
 ==== Set Passwords and Expiration Dates
 
-image:public-link-set-password.png[Set a password for a public link in ownCloud's Mobile App for iOS, width=40%]
+image:public-link-set-password.png[Set a password for a public link in ownCloud's Mobile App for iOS, width=60%,pdfwidth=60%]
 
 To set a password on a public link, under "_Options_", enable btn:[Password]. Then, type a password in the field that appears below the Password option.
 
-image:public-link-set-expiration-date.png[Set an expiration date for a public link in ownCloud's MobileApp for iOS, width=40%]
+image:public-link-set-expiration-date.png[Set an expiration date for a public link in ownCloud's MobileApp for iOS, width=60%,pdfwidth=60%]
 
 To set an expiration date on a public link, under "_Options_", enable btn:[Expiration date]. Then, pick the date that the link should expire with the date picker that appears below the Expiration date option.
 
@@ -69,9 +69,9 @@ There are two ways to delete a public link.
 
 . When viewing the list of links for a file or folder, swipe left on the link that you want to delete,
   and click btn:[Delete]. +
-  image:swipe-and-delete-public-link.png[, width=40%]
+  image:swipe-and-delete-public-link.png[, width=60%,pdfwidth=60%]
 . When viewing the Public Link, click btn:[Delete] at the bottom of the page, under btn:[Copy Public Link]. +
-  image:delete-public-link.png[Delete a Public Link in ownCloud’s iOS app, by clicking Delete at the bottom of the Public Link details page, width=40%]
+  image:delete-public-link.png[Delete a Public Link in ownCloud’s iOS app, by clicking Delete at the bottom of the Public Link details page, width=60%,pdfwidth=60%]
 
 === View Public Links
 
