@@ -87,7 +87,7 @@ If a SSL/TLS certificate fails trust evaluation (e.g., because it's self-signed 
 * Trust the certificate, despite the warnings, by clicking btn:[Approve].
 * Reject the certificate, by clicking btn:[Cancel].
 
-image:04_cert_error.png[Review SSL/TLS certificates in the ownCloud iOS app., width=40%]
+image:04_cert_error.png[Review SSL/TLS certificates in the ownCloud iOS app., width=40%,pdfwidth=40%]
 
 In the case of redirects across several HTTPS servers, users are given the opportunity to review the certificates of all servers involved in addition to the redirects.
 
@@ -155,4 +155,4 @@ When logging information, parts of the log message can be tagged as private. If 
 
 An example for the latter would be an `NSError` object's error message containing the names of the item it is about. If masked, only the error's error domain and error code are written to the log, but not the error message.
 
-image:masking-private-data.png[, width=40%]
+image:masking-private-data.png[, width=40%,pdfwidth=40%]

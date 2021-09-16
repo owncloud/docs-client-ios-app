@@ -26,7 +26,7 @@ The iOS app supports two ways of authentication options for user accounts. These
 * Login Credentials are stored on the device (secured in the iOS system keychain).
 * Password manager support.
 
-image:02_basic_auth.png[basic authentication, width=60%,pdfwidth=60%]
+image:02_basic_auth.png[basic authentication, width=40%,pdfwidth=40%]
 
 === OAuth 2.0
 
@@ -40,17 +40,17 @@ Additionally, OAuth2 is the industry standard authorisation method, and the user
 
 == Add An Account
 
-image:04_Account_1x.png[Add a user account in the ownCloud iOS App., width=60%,pdfwidth=60%]
+image:04_Account_1x.png[Add a user account in the ownCloud iOS App., width=40%,pdfwidth=40%]
 
 To add one or more user accounts to the iOS app, when in the "*Accounts*" view, click the plus (+) icon in the top right-hand corner. This opens the "*Add Account*" dialog, where you can enter the URL of the ownCloud server. After you enter it and click "Continue", the iOS app checks the authentication method and the validity of the SSL/TLS certificate (_if the server URL uses the HTTPS protocol_).
 
 If the certificate is deemed to be valid, you will see a green "*Passed*" symbol near the bottom of the page, next to "*Certificate Details*", and the text "*No issues found. Certificate passed validation.*"
 
-image:add-account-certificate-passed-validation.png[Authenticate a user account using OAuth2 in the ownCloud iOS App., width=60%,pdfwidth=60%]
+image:add-account-certificate-passed-validation.png[Authenticate a user account using OAuth2 in the ownCloud iOS App., width=40%,pdfwidth=40%]
 
 Click btn:[Continue] and the app will prompt you if you want to use the supplied server URL to sign in to the app. You will then be redirected to the ownCloud server, where you can supply your username and password. After doing so, and submitting the form, you will then be asked if you want to give permission for the app to access your account. 
 
-image:14_OAuth_Web_view_authorize.png[Authorize a user account against an ownCloud server with the ownCloud iOS App., width=60%,pdfwidth=60%]
+image:14_OAuth_Web_view_authorize.png[Authorize a user account against an ownCloud server with the ownCloud iOS App., width=40%,pdfwidth=40%]
 
 * If so, click btn:[Authorize]. 
 * If not, click btn:[Cancel].
@@ -65,11 +65,11 @@ ownCloud server must have {oauth2-app-url}[the OAuth2 app] installed, configured
 
 If you want to delete an account, when viewing the Accounts list, swipe left on the account that you want to delete and click btn:[Delete].
 
-image:edit-or-delete-account.png[How to edit and delete an account in the ownCloud iOS app Accounts list, width=60%,pdfwidth=60%]
+image:edit-or-delete-account.png[How to edit and delete an account in the ownCloud iOS app Accounts list, width=40%,pdfwidth=40%]
 
 You will then be asked if you really want to delete that account. 
 
-image:confirm-account-deletion.png[Confirm account deletion in the ownCloud iOS app, width=60%,pdfwidth=60%]
+image:confirm-account-deletion.png[Confirm account deletion in the ownCloud iOS app, width=40%,pdfwidth=40%]
 
 If you do, click btn:[Delete]. Doing so deletes the account from the device, as well as all locally stored file copies. If you don’t want to delete the account, click btn:[Cancel].
 
@@ -77,7 +77,7 @@ If you do, click btn:[Delete]. Doing so deletes the account from the device, as 
 
 If you want to edit an account, when viewing the Accounts list, swipe left on the account that you want to edit and click btn:[Edit].
 
-image:edit-or-delete-account.png[How to edit and delete an account in the ownCloud iOS app Accounts list, width=60%,pdfwidth=60%]
+image:edit-or-delete-account.png[How to edit and delete an account in the ownCloud iOS app Accounts list, width=40%,pdfwidth=40%]
 
 You will then be able to change the ownCloud server URL, and manage the authentication credentials. How the authentication credentials can be managed depends on the authentication type.
 
@@ -91,6 +91,6 @@ a different password, as well as delete their authentication data.
 | The user is authenticated using OAuth2 authentication. In this setup, they will only be able
 to delete their OAuth2 authentication.
 
-^| image:07_Account_edit.png[ownCloud iOS App - Authenticating users using Basic Authentication, width=45%,pdfwidth=45%]
-^| image:edit-oauth2-authenticated-account.png[ownCloud iOS App - Authenticating users using OAuth2 Authentication, width=45%,pdfwidth=45%]
+^| image:07_Account_edit.png[ownCloud iOS App - Authenticating users using Basic Authentication, width=60%,pdfwidth=45%]
+^| image:edit-oauth2-authenticated-account.png[ownCloud iOS App - Authenticating users using OAuth2 Authentication, width=60%,pdfwidth=45%]
 |===
