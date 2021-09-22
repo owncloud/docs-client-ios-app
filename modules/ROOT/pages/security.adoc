@@ -88,7 +88,7 @@ If a SSL/TLS certificate fails trust evaluation (e.g., because it's self-signed 
 * Trust the certificate, despite the warnings, by clicking btn:[Approve].
 * Reject the certificate, by clicking btn:[Cancel].
 
-image:security/04_cert_error.png[Review SSL/TLS certificates in the ownCloud iOS app., width=40%,pdfwidth=40%]
+image:security/04_cert_error.png[Review SSL/TLS certificates in the ownCloud iOS app., width=35%,pdfwidth=35%]
 
 In the case of redirects across several HTTPS servers, users are given the opportunity to review the certificates of all servers involved in addition to the redirects.
 

@@ -34,7 +34,7 @@ Once these have been enabled:
 * Go back to the Logging settings and click btn:[Share log file].
 
 .All iOS App logging settings enabled and set
-image:ios-app-settings-logging.png[ios-app-settings-logging,, width=40%,pdfwidth=40%]
+image:ios-app-settings-logging.png[ios-app-settings-logging,, width=70%,pdfwidth=70%]
 
 === Locating iPhone & iPad App Crash Logs
 
