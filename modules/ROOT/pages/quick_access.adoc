@@ -1,6 +1,7 @@
 = Quick Access
 :page-aliases: ios_quick_access.adoc
 :toc: right
+
 :keywords: shares, collection, recently access files, quick access, ownCloud, iOS, iPhone, iPad
 :description: This guide steps you through how to use the Quick Access functionality of ownCloud's Mobile App for iOS.
 
