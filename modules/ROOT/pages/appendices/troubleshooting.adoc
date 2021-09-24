@@ -34,7 +34,7 @@ Once these have been enabled:
 * Go back to the Logging settings and click btn:[Share log file].
 
 .All iOS App logging settings enabled and set
-image:ios-app-settings-logging.png[ios-app-settings-logging,, width=70%,pdfwidth=70%]
+image:appendices/troubleshooting/ios-app-settings-logging.png[ios-app-settings-logging,, width=70%,pdfwidth=70%]
 
 === Locating iPhone & iPad App Crash Logs
 
@@ -52,7 +52,7 @@ menu:Settings[General (Admin)]. On that page, you can adjust the log level.
 We recommend that you set it to a verbose level such as either `debug` or `info`.
 
 .Configuring logging in ownCloud server.
-image:owncloud-log-configuration.png[Configuring logging in ownCloud server., width=40%,pdfwidth=40%]
+image:appendices/troubleshooting/owncloud-log-configuration.png[Configuring logging in ownCloud server., width=40%,pdfwidth=40%]
 
 === Web Server Log Files
 
@@ -108,7 +108,7 @@ If you need to check the traffic between ownCloud and the iOS App, we recommend 
 {mitmproxy-url}[mitmproxy] is an interactive man-in-the-middle proxy for HTTP and HTTPS with a console interface.
 At ownCloud, we use it a lot to investigate every detail of HTTP requests and responses.
 
-image:mitmproxy_screenshot.png[mitmproxy sample output, width=100%,pdfwidth=100%]
+image:appendices/troubleshooting/mitmproxy_screenshot.png[mitmproxy sample output, width=100%,pdfwidth=100%]
 
 === Charles for iOS
 
