@@ -14,21 +14,21 @@ Here you can find some of the most frequently asked questions about the ownCloud
 
 == Usage
 
-=== Compatibility with ownCloud server older than version 10.0
+=== Compatibility With ownCloud Server Older Than Version 10.0
 
-Previous ownCloud iOS app with support for ownCloud server < 10.0 is still available in {ios-legacy-appstore-url}[App Store].
+Previous ownCloud iOS app with support for ownCloud Server < 10.0 is still available in {ios-legacy-appstore-url}[App Store].
 
-=== Compatibility with iOS versions older than iOS 12.0
+=== Compatibility With iOS Versions Older Than iOS 12.0
 
 Previous ownCloud iOS app with support for iOS < 12.0 is still available in {ios-legacy-appstore-url}[App Store].
 
-=== Login with TOTP and other 2FA
+=== Login With TOTP and Other 2FA
 
 ownCloud server must have {oauth2-app-url}[the OAuth2 app] installed, configured, and enabled to use Two-Factor Authentication. Please contact your ownCloud administrator for more details.
 
 == Feature Requests
 
-=== FileProvider: Access full folder, not only single files
+=== FileProvider: Access Full Folder, Not Only Single Files
 
 This seems like a bigger challenge for us. We track the status here:
 https://github.com/owncloud/ios-app/issues/604
@@ -37,19 +37,19 @@ https://github.com/owncloud/ios-app/issues/604
 
 To support "Recent items" and "Favorites" in the iOS Files app, implementation of the {defining-your-file-provider-url}[Working Set] is needed. This is one of the next roadmap items, but there's no ETA yet.
 
-=== Text editing inside the iOS app
+=== Text Editing Inside the iOS App
 
 Currently this isn't a planned feature. Focus is more to build the best integration in serious 3rd party text editing app.
 
 Here you can find previous discussions:
 https://github.com/owncloud/ios-app/issues/317
 
-=== Missing translations or translation bugs
+=== Missing Translations or Translation Bugs
 
 You can help translate in your language or fix a bug.
 
 We use Transifex for translations. Please {ios-app-tx-url}[register here] for an account and join the global community.
 
-=== Testing new features
+=== Testing New Features
 
 Use {ios-app-beta-url}[this link] to join the beta program on iOS.
