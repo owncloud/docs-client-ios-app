@@ -1,7 +1,8 @@
 = Security
 :page-aliases: ios_security.adoc
 :toc: right
-:toclevels: 1
+// :toclevels: 1
+
 :keywords: ownCloud, security, encryption, mdm, ssl, tls, oauth2, authentication, ios, iphone, ipad
 :description: This guide steps you through the security features of of ownCloud's Mobile App for iOS.
 :apple-completeuntilfirstuserauthentication-url: https://developer.apple.com/documentation/foundation/nsfileprotectioncompleteuntilfirstuserauthentication

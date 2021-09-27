@@ -17,7 +17,9 @@ The Mobile App for iOS supports the following collaboration functionality:
 * Changing permissions
 * Deleting collaborators
 
-== Grant Access With Links
+== Manage Links
+
+=== Grant Access With Links
 
 Just as with the web interface, the iOS app lets you grant access to both files and folders with links.
 Specifically, you can do the following:

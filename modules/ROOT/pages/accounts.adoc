@@ -1,7 +1,7 @@
 = Managing User Accounts
 :page-aliases: ios_accounts.adoc
 :toc: right
-:toclevels: 1
+
 :keywords: user accounts, OAuth2 authentication, basic authentication, ownCloud iOS App
 :description: This guide steps you through how to manage user accounts in ownCloud’s iOS app; including the authentication types, and how to add, update, remove, and delete user accounts.
 :sfauthenticationsession-url: https://developer.apple.com/documentation/safariservices/sfauthenticationsession
@@ -39,7 +39,9 @@ The OAuth2 implementation uses {sfauthenticationsession-url}[`SFAuthenticationSe
 
 Additionally, OAuth2 is the industry standard authorisation method, and the username and password are not stored on the device.
 
-== Add An Account
+== Manage Accounts
+
+=== Add an Account
 
 image:accounts/04_Account_1x.png[Add a user account in the ownCloud iOS App., width=40%,pdfwidth=40%]
 
@@ -62,7 +64,7 @@ image:accounts/14_OAuth_Web_view_authorize.png[Authorize a user account against 
 ownCloud server must have {oauth2-app-url}[the OAuth2 app] installed, configured, and enabled to use Two-Factor Authentication. Please contact your ownCloud administrator for more details.
 ====
 
-=== Delete An Account
+=== Delete an Account
 
 If you want to delete an account, when viewing the Accounts list, swipe left on the account that you want to delete and click btn:[Delete].
 
