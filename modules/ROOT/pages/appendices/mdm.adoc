@@ -1,6 +1,7 @@
 = Mobile Device Management (MDM)
 :page-aliases: ios_mdm.adoc
 :toc: right
+
 :keywords: ownCloud, MDM, Mobile Device Management, iOS, iPhone, iPad
 :description: This guide steps you through how to manage the application configuration of ownCloud’s Mobile App for iOS using Mobile Device Management (MDM).
 :appconfig-xml-format-url: https://www.appconfig.org/ios/
@@ -13,7 +14,7 @@
 
 Starting with iOS 7, Apple added support for {mdm-protocol-ref-url}[managed application configuration]. An MDM server can push a configuration to the iOS App. The app can access this configuration (read-only) using the `NSUserDefaults` class by reading a configuration dictionary under the key _com.apple.configuration.managed_. An app can also observe a system notification (_NSUserDefaultsDidChangeNotification_) to get notified about configuration changes. In addition feedback can be queried back by MDM server. To enable that, app has to write a dictionary with feedback information into user defaults under _com.apple.feedback.managed_ key. The configuration is basically a key-value dictionary provided as a `.plist` file.
 
-=== Configurable Settings
+== Configurable Settings
 
 ownCloud App implements a mechanism internally called Class Settings which can be derived from different sources:
 
@@ -27,13 +28,13 @@ This is also an order in which these settings take precedence (environment varia
 
 Some settings are accessed only once at runtime and the read value is cached, so that new setting to take effect may a require an app to be terminated and restarted.
 
-==== App Basic Configurations
+=== App Basic Configurations
 
 There are few settings allowing to mark an app installation as BETA and e.g. to supress UIKit animation and review prompt.
 
 include::./mdm_tables.adoc[tag=app]
 
-==== Extensions / Actions
+=== Extensions / Actions
 
 ownCloud app uses internally a plug-in like mechanism called extensions. Extensions are used to implement menu actions mostly found under "+" menu allowing to add new items (Upload media, take photo etc.) or in more menu (Copy, Move, Open in etc.). Using below settings actions / extensions can be disabled. Extensions are enabled by default, however this might depend on licensing requirements of a particular extension.
 
@@ -41,54 +42,54 @@ include::./mdm_tables.adoc[tag=actions]
 
 (*) These extensions might require additional license (in-app purchase, enterprise version).
 
-==== Display Settings
+=== Display Settings
 
 To customize file list UI behevior, following settings are available: 
 
 // include::./mdm_tables.adoc[tag=displaysettings]
 
-==== Passcode Enforcement
+=== Passcode Enforcement
 
 If your organization policies require users to use a passcode as an additional security barrier for managed apps, the below setting will allow to enforce this requirement.
 
 include::./mdm_tables.adoc[tag=passcode]
 
-==== Bookmark
+=== Bookmark
 
 Below settings allow to configure the app to use a certain server URL and even bind it to this URL only by setting the default non-editable.
 
 include::./mdm_tables.adoc[tag=bookmarks]
 
-==== Item Policies
+=== Item Policies
 
 include::./mdm_tables.adoc[tag=policies]
 
-==== Connection
+=== Connection
 
 Settings concerinng HTTP user agent, cookies, background support etc.
 
 include::./mdm_tables.adoc[tag=connection]
 
-===== Server Endpoints
+==== Server Endpoints
 
 Individually configurable endpoints of the ownCloud server instance.
 
 include::./mdm_tables.adoc[tag=endpoints]
 
-===== Connection Authentication / Security
+==== Connection Authentication / Security
 
 Settings concerning certificate validation policies.
 
 include::./mdm_tables.adoc[tag=security]
 
-===== OAuth2 Based Authentication
+==== OAuth2 Based Authentication
 
 Settings allowing to configure OAuth2 based authentication.
 
 include::./mdm_tables.adoc[tag=oauth2]
 
 ////
-==== Shortcuts
+=== Shortcuts
 
 Shortcuts are a very powerful way to build automated workflows in iOS. Apps can provide shortcut intents
 for certain actions. ownCloud app provides certain actions as shortcuts as well (e.g. allowing to get
@@ -98,7 +99,7 @@ shortcuts to minimize security risks. It can be done using following option:
 include::./mdm_tables.adoc[tag=shortcuts]
 ////
 
-==== Logging
+=== Logging
 
 Logging settings control the ammount and type of app internal log messages stored as text files and accessible via settings menu.
 
@@ -110,7 +111,7 @@ include::./mdm_tables.adoc[tag=logging]
 
 AppConfig conformant spec file tailored to administrator needs and containing one or more of the above settings can be easily created using {appconfig-url}/www/appconfigspeccreator/[Config Spec Creator] tool hosted at {appconfig-url}[AppConfig website].
 
-== Example: Deployment with MobileIron
+== Example: Deployment With MobileIron
 
 1. Open {appconfig-jam-url}[AppConfig Generator]
 2. Upload a specfile.xml.
@@ -120,7 +121,7 @@ AppConfig conformant spec file tailored to administrator needs and containing on
 6. Navigate to menu:Policies and Configs[Add New > Apple > iOS/tvOS > Managed App Config]
 7. Upload the generated plist and specify name, bundle ID, and description
 
-== Example: Deployment with Jamf Pro
+== Example: Deployment With Jamf Pro
 
 1. Open {appconfig-jam-url}[AppConfig Generator]
 2. Upload a specfile.xml.

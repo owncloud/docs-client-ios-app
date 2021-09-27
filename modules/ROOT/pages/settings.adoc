@@ -1,7 +1,7 @@
 = Configure Settings
 :page-aliases: ios_settings.adoc
 :toc: right
-:toclevels: 1
+
 :keywords: settings, passcode lock, biometric lock, theme, logging, ownCloud, iOS, iPhone, iPad
 :description: This guide steps you through how to configure ownCloud's iOS App for iPhone and iPad. It covers security, theme, logging, and media upload settings.
 :heic-image-url: https://en.wikipedia.org/wiki/High_Efficiency_Image_File_Format
