@@ -13,3 +13,4 @@
 * xref:appendices/index.adoc[Appendices]
 ** xref:appendices/mdm.adoc[Mobile Device Management (MDM)]
 ** xref:appendices/troubleshooting.adoc[Troubleshooting]
+** xref:appendices/release_notes.adoc[Release Notes]
