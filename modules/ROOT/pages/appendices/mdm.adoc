@@ -111,25 +111,31 @@ include::./mdm_tables.adoc[tag=logging]
 
 AppConfig conformant spec file tailored to administrator needs and containing one or more of the above settings can be easily created using {appconfig-url}/www/appconfigspeccreator/[Config Spec Creator] tool hosted at {appconfig-url}[AppConfig website].
 
+owncloud provides three example specfiles:
+
+* link:{attachmentsdir}/specfile.xml[specfile.xml]
+* link:{attachmentsdir}/minimal-specfile.xml[minimal-specfile.xml]
+* link:{attachmentsdir}/log-passcode-specfile.xml[log-passcode-specfile.xml]
+
 == Example: Deployment With MobileIron
 
 1. Open {appconfig-jam-url}[AppConfig Generator]
-2. Upload a specfile.xml.
-3. Change the configuration options.
-4. Download the generated plist file (ManagedAppConfig).
-5. Open MobileIron Core.
+2. Upload a specfile.xml
+3. Change the configuration options
+4. Download the generated plist file (ManagedAppConfig)
+5. Open MobileIron Core
 6. Navigate to menu:Policies and Configs[Add New > Apple > iOS/tvOS > Managed App Config]
 7. Upload the generated plist and specify name, bundle ID, and description
 
 == Example: Deployment With Jamf Pro
 
 1. Open {appconfig-jam-url}[AppConfig Generator]
-2. Upload a specfile.xml.
-3. Change the configuration options.
-4. Copy Dictionary (button).
-5. Open Jamf Pro.
+2. Upload a specfile.xml
+3. Change the configuration options
+4. Copy Dictionary (button)
+5. Open Jamf Pro
 6. Navigate to menu:Devices[Mobile Device Apps > ownCloud - File Sync and Share > iOS/tvOS > App Configuration > Edit]
-7. Paste the generated Dictionary into the "Preferences" field.
+7. Paste the generated Dictionary into the "Preferences" field
 
 == References
 
