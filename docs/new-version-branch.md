@@ -1,6 +1,6 @@
 # Create a New Version Branch for the iOS App
 
-When doing a new release for the iiOS App like `11.x`, a new version branch must be created based on `master`. It is necessary to do this in four steps. Please set the new and former version numbers accordingly
+When doing a new release for the iOS App like `11.x`, a new version branch must be created based on `master`. It is necessary to do this in four steps. Please set the new and former version numbers accordingly
 
 **Step 1: Create and configure the new `11.x` branch**
 
@@ -25,7 +25,7 @@ When doing a new release for the iiOS App like `11.x`, a new version branch must
 14. Commit changes and push it
 15. Create a Pull Request. When CI is green, all is done correctly. Merge the PR to master.
 
-**Step 3: Set the correct Desktop build branches in the docs repo**
+**Step 3: Set the correct iOS build branches in the docs repo**
 
 16. In `site.yml` of [docs](https://github.com/owncloud/docs/blob/master/site.yml) adjust the last **two** branches at `url: https://github.com/owncloud/docs-client-ios-app.git` accordingly
     (in section `content.sources.url.branches`)
@@ -47,8 +47,8 @@ When 11.x (iOS-App) is finally out, the 11.x-2 branch can be archived,
 see step 4 in https://github.com/owncloud/docs-client-ios-app/blob/master/docs/new-version-branch.md
 
 Note, that the 11.x branch in this repo is already created, but the `latest` pointer on the web
-will be set to it automatically when the tag in Desktop is set. This means, that in the docs homepage,
-`latest` will point to 11.x-1 until the tag in Desktop is set accordingly. When merging this PR,
+will be set to it automatically when the tag in iOS-App repo is set. This means, that in the docs homepage,
+`latest` will point to 11.x-1 until the tag in iOS-App repo is set accordingly. When merging this PR,
 11.x-2 will be dropped from the web but is available via pdf as usual.
 
 Note, this PR must be merged before the 11.x tag in the iOS-App repo is set to avoid a 404 for `latest`.
