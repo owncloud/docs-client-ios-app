@@ -23,8 +23,8 @@ asciidoc:
     idprefix: ''
     idseparator: '-'
     experimental: ''
-    latest-ios-app-version: 11.8
-    previous-ios-app-version: 11.7
+    latest-ios-app-version: '11.8'
+    previous-ios-app-version: '11.7'
   extensions:
     - ./lib/extensions/tabs.js
     - ./lib/extensions/remote-include-processor.js
