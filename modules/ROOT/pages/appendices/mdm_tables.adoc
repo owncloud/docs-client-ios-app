@@ -1,4 +1,3 @@
-
 tag::actions[]
 [cols="1,2,3,4a,5",options=header]
 |=== 
@@ -1322,5 +1321,3 @@ Examples of expressions:
 
 |===
 end::security[]
-
-
