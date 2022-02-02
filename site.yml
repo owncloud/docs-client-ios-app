@@ -2,7 +2,8 @@
 site:
   title: ownCloud iOS App Documentation
   url: https://doc.owncloud.com
-
+  start_page: ios-app::index.adoc
+  
 content:
   sources:
   - url: .
