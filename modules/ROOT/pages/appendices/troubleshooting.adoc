@@ -22,8 +22,7 @@ If you experience problems while using the iOS app, you can use this guide to ho
 There are two kinds of logs recorded in different locations:
 
 .The Log Created by the iOS App
-See xref:ios_troubleshooting.html#capturing-app-debug-logs[Capturing App Debug Logs] for how to enable app logs.
-On the same screen where you enable logging, you can access the log files. Touch menu:Share log file[] which opens a new screen with all the log files created. To export the selected logs, tap the share button on the top right-hand side of the screen.
+See xref:capturing-app-debug-logs[Capturing App Debug Logs] for how to enable app logs. On the same screen where you enable logging, you can access the log files. Touch menu:Share log file[] which opens a new screen with all the log files created. To export the selected logs, tap the share button on the top right-hand side of the screen.
 
 .The iOS Crash Log
 If the iOS app isn't responding or is crashing, iOS saves a crash log on the device. You can find the crash log on your device under menu:Settings[Privacy > Analytics > Analytics Data]. The log entries are sorted alphabetically with the app name, the date and a computer-readable timestamp. Tap the log of choice to open the crash log and export it with the share button on the top right-hand side of the screen.
