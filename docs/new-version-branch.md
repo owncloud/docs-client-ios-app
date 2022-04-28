@@ -10,7 +10,7 @@ When doing a new release for the iOS App like `11.x`, a new version branch must 
 3.  In `.drone.star` set `latest_version` to `11.x` (on top in section `def main(ctx)`)
 4.  In `site.yml` adjust all `-version` keys according the new and former releases
     (in section `asciidoc.attributes`)
-5.  In `antora.yml` change the version from `master` to `11.x`
+5.  In `antora.yml` change the version from `master` to `11.x`. **Do not change** the attribute refrencing the upcoming iOS-app tag as it currently does not exist. This does not do any harm, because content of the upcoming tag derives from master.
 6.  Run a build by entering `yarn antora-local`. No errors should occur
 7.  Commit the changes and push the new `11.x` branch. **DO NOT CREATE A PR!**
 
@@ -33,6 +33,10 @@ When doing a new release for the iOS App like `11.x`, a new version branch must 
 
 17. Go to the settings of the this repository and change the protection of the branch list (Settings > Branches) so that the `11.x` branch gets protected and the `11.x-2` branch is no longer protected.
 18. Rename the `11.x-2` branch to `x_archived_11.x-2`
+
+**Step 5: Set the Correct iOS-App Tag**
+
+19. When the iOS-App has been released, a new tag in the iOS-App repo is set. Create a PR with the changed tag name in the attribute section of `antora.yml` and merge asap. Only do this if the tag is created in the iOS-App repo to avoid a build error.
 
 **Text Suggestion for Step 2**
 
