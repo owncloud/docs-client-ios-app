@@ -1,7 +1,7 @@
 
 tag::actions[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -183,7 +183,7 @@ end::actions[]
 
 tag::app[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -233,7 +233,7 @@ end::app[]
 
 tag::authentication[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -277,7 +277,7 @@ end::authentication[]
 
 tag::bookmarks[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -303,7 +303,7 @@ end::bookmarks[]
 
 tag::branding[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -393,7 +393,7 @@ branding.url-help
  +
 branding.url-privacy
 |urlString
-|`https://owncloud.org/privacy-policy/`
+|`https://owncloud.com/privacy-statement/`
 |URL to get privacy information for the app. Opened when selecting "Privacy" in the settings.
 |advanced `candidate`
 
@@ -552,7 +552,7 @@ end::branding[]
 
 tag::browsersession[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -578,7 +578,7 @@ end::browsersession[]
 
 tag::connection[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -725,7 +725,7 @@ end::connection[]
 
 tag::diagnostics[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -745,7 +745,7 @@ end::diagnostics[]
 
 tag::displaysettings[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -777,7 +777,7 @@ end::displaysettings[]
 
 tag::endpoints[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -851,7 +851,7 @@ end::endpoints[]
 
 tag::licensing[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -877,7 +877,7 @@ end::licensing[]
 
 tag::logging[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -1032,7 +1032,7 @@ end::logging[]
 
 tag::oauth2[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -1082,7 +1082,7 @@ end::oauth2[]
 
 tag::oidc[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -1120,7 +1120,7 @@ end::oidc[]
 
 tag::passcode[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -1152,7 +1152,7 @@ end::passcode[]
 
 tag::policies[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -1184,7 +1184,7 @@ end::policies[]
 
 tag::privacy[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -1204,7 +1204,7 @@ end::privacy[]
 
 tag::releasenotes[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
@@ -1230,7 +1230,7 @@ end::releasenotes[]
 
 tag::security[]
 [cols="1,2,3,4a,5",options=header]
-|=== 
+|===
 |Key
 |Type
 |Default
