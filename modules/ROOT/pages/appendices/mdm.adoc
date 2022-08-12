@@ -46,7 +46,7 @@ include::./mdm_tables.adoc[tag=actions]
 
 To customize file list UI behevior, following settings are available: 
 
-// include::./mdm_tables.adoc[tag=displaysettings]
+include::./mdm_tables.adoc[tag=displaysettings]
 
 === Passcode Enforcement
 
@@ -66,7 +66,7 @@ include::./mdm_tables.adoc[tag=policies]
 
 === Connection
 
-Settings concerinng HTTP user agent, cookies, background support etc.
+Settings concerning HTTP user agent, cookies, background support etc.
 
 include::./mdm_tables.adoc[tag=connection]
 
@@ -88,6 +88,70 @@ Settings allowing to configure OAuth2 based authentication.
 
 include::./mdm_tables.adoc[tag=oauth2]
 
+==== OpenID Connect (OIDC) parameters
+
+OpenID Connect (OIDC) parameters allow you fine-tune the behaviour, in case the Identity Provider (IdP) needs something special.
+
+include::./mdm_tables.adoc[tag=oidc]
+
+=== Logging
+
+Logging settings control the ammount and type of app internal log messages stored as text files and accessible via settings menu.
+
+include::./mdm_tables.adoc[tag=logging]
+
+=== Account Handling
+
+include::./mdm_tables.adoc[tag=account]
+
+=== Authentication Settings
+
+Authentication settings control the behaviour of the web-based login.
+
+include::./mdm_tables.adoc[tag=authentication]
+
+=== Browsersession (deprecated)
+
+Browsersession settings were extended, and are now included in `authentication.browser-session-class` (Authentication Settings)
+
+include::./mdm_tables.adoc[tag=browsersession]
+
+=== Branding Parameters
+
+include::./mdm_tables.adoc[tag=branding]
+
+===  Build Options
+
+The following build options are only available for configuring custom builds via the `Branding.plist` file. They can't be configured dynamically wih MDM: 
+
+include::./mdm_tables.adoc[tag=build]
+
+=== Diagnostics
+
+include::./mdm_tables.adoc[tag=diagnostics]
+
+=== Licensing
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci lorem, sagittis at mollis non, consequat a purus. Integer vestibulum luctus est id faucibus. Etiam euismod posuere tristique.
+
+include::./mdm_tables.adoc[tag=licensing]
+
+=== Localization feature
+
+The localization feature allows to overwrite every string in the app, in every language.
+
+include::./mdm_tables.adoc[tag=localization]
+
+=== Privacy ???
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci lorem, sagittis at mollis non, consequat a purus. Integer vestibulum luctus est id faucibus. Etiam euismod posuere tristique.
+
+include::./mdm_tables.adoc[tag=privacy]
+
+=== Releasenotes
+
+include::./mdm_tables.adoc[tag=releasenotes]
+
 ////
 === Shortcuts
 
@@ -98,12 +162,6 @@ shortcuts to minimize security risks. It can be done using following option:
 
 include::./mdm_tables.adoc[tag=shortcuts]
 ////
-
-=== Logging
-
-Logging settings control the ammount and type of app internal log messages stored as text files and accessible via settings menu.
-
-include::./mdm_tables.adoc[tag=logging]
 
 == AppConfig XML Schema
 
