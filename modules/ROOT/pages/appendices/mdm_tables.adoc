@@ -1,7 +1,27 @@
 
-tag::actions[]
-[cols="1,2,3,4a,5",options=header]
+tag::account[]
+[cols="2,1,1,2a,1",options=header]
+|=== 
+|Key
+|Type
+|Default
+|Description
+|Status
+
+
+|account.auto-connect
+|bool
+|`false`
+|Skip "Account" screen / automatically open "Files" screen after login
+|supported `candidate`
+
 |===
+end::account[]
+
+
+tag::actions[]
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -13,7 +33,7 @@ tag::actions[]
 |stringArray
 |`[]`
 |List of all allowed actions. If provided, actions not listed here are not allowed.
-[cols="1,2"]
+[cols="1,1"]
 !===
 ! Value
 ! Description
@@ -97,7 +117,7 @@ tag::actions[]
 |stringArray
 |`[]`
 |List of all disallowed actions. If provided, actions not listed here are allowed.
-[cols="1,2"]
+[cols="1,1"]
 !===
 ! Value
 ! Description
@@ -182,8 +202,8 @@ end::actions[]
 
 
 tag::app[]
-[cols="1,2,3,4a,5",options=header]
-|===
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -232,8 +252,8 @@ end::app[]
 
 
 tag::authentication[]
-[cols="1,2,3,4a,5",options=header]
-|===
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -245,10 +265,13 @@ tag::authentication[]
 |string
 |`operating-system`
 |Alternative browser session class to use instead of `ASWebAuthenticationSession`. Please also see Compile Time Configuration if you want to use this.
-[cols="1,2"]
+[cols="1,1"]
 !===
 ! Value
 ! Description
+! `AWBrowser`
+! Replace `http` with `awb` and `https` with `awbs` to delegate browser sessions to the AirWatch browser.
+
 ! `CustomScheme`
 ! Replace http and https with custom schemes to delegate browser sessions to a different app.
 
@@ -276,8 +299,8 @@ end::authentication[]
 
 
 tag::bookmarks[]
-[cols="1,2,3,4a,5",options=header]
-|===
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -291,6 +314,27 @@ tag::bookmarks[]
 |The default URL for the creation of new bookmarks.
 |supported `candidate`
 
+|bookmark.prepopulation
+|string
+|
+|Controls prepopulation of the local database with the full item set during account setup.
+[cols="1,1"]
+!===
+! Value
+! Description
+! `doNot`
+! No prepopulation. Request the contents of every folder individually.
+
+! `split`
+! Parse the prepopulation metadata after receiving it as a whole.
+
+! `streaming`
+! Parse the prepopulation metadata while receiving it.
+
+!===
+
+|supported `candidate`
+
 |bookmark.url-editable
 |bool
 |`true`
@@ -302,8 +346,8 @@ end::bookmarks[]
 
 
 tag::branding[]
-[cols="1,2,3,4a,5",options=header]
-|===
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -315,6 +359,27 @@ tag::branding[]
 |string
 |
 |App name to use throughout the app.
+|supported `candidate`
+
+|branding.disabled-import-methods
+|stringArray
+|
+|List of disabled import methods that can't be used.
+[cols="1,1"]
+!===
+! Value
+! Description
+! `file-provider`
+! Disallow import through the File Provider (Files.app)
+
+! `open-with`
+! Disallow import through "Open with"
+
+! `share-extension`
+! Disallow import through the Share Extension
+
+!===
+
 |supported `candidate`
 
 |branding.organization-name
@@ -361,6 +426,14 @@ branding.send-feedback-address
 |Email address to send feedback to. Set to `null` to disable this feature.
 |advanced `candidate`
 
+|**Feedback URL** +
+ +
+branding.send-feedback-url
+|string
+|
+|URL to open when selecting the "Send feedback" option. Allows the use of all placeholders provided in `http.user-agent`.
+|advanced `candidate`
+
 |branding.theme-definitions
 |dictionaryArray
 |
@@ -377,7 +450,7 @@ branding.send-feedback-address
  +
 branding.url-documentation
 |urlString
-|`https://doc.owncloud.com/ios-app/`
+|`https://doc.owncloud.com/ios-app/latest/`
 |URL to documentation for the app. Opened when selecting "Documentation" in the settings.
 |advanced `candidate`
 
@@ -393,7 +466,7 @@ branding.url-help
  +
 branding.url-privacy
 |urlString
-|`https://owncloud.com/privacy-statement/`
+|`https://owncloud.org/privacy-policy/`
 |URL to get privacy information for the app. Opened when selecting "Privacy" in the settings.
 |advanced `candidate`
 
@@ -403,6 +476,12 @@ branding.url-terms-of-use
 |urlString
 |`https://raw.githubusercontent.com/owncloud/ios-app/master/LICENSE`
 |URL to terms of use for the app. Opened when selecting "Terms Of Use" in the settings.
+|advanced `candidate`
+
+|branding.user-defaults-default-values
+|dictionary
+|
+|Default values for user defaults. Allows overriding default settings.
 |advanced `candidate`
 
 |`Profile` +
@@ -421,7 +500,7 @@ branding.profile-allowed-authentication-methods
 |stringArray
 |
 |The identifiers of the authentication methods allowed for this profile. Allows to f.ex. force OAuth2, or to use Basic Auth even if OAuth2 is available.
-[cols="1,2"]
+[cols="1,1"]
 !===
 ! Value
 ! Description
@@ -551,8 +630,8 @@ end::branding[]
 
 
 tag::browsersession[]
-[cols="1,2,3,4a,5",options=header]
-|===
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -576,9 +655,41 @@ tag::browsersession[]
 end::browsersession[]
 
 
-tag::connection[]
-[cols="1,2,3,4a,5",options=header]
+tag::build[]
+[cols="2,1,1,2a,1",options=header]
+|=== 
+|Key
+|Type
+|Default
+|Description
+|Status
+
+
+|build.custom-app-scheme
+|string
+|`owncloud`
+|Name of the URL scheme to use for private links. Must be provided in Branding.plist at build time. For documentation, please see doc/BUILD_CUSTOMIZATION.md.
+|supported `candidate`
+
+|build.custom-auth-scheme
+|string
+|`oc`
+|Name of the URL scheme to use for OAuth2/OIDC authentication. Must be provided in Branding.plist at build time. The authentication redirect URI parameters must also be changed accordingly in Branding.plist and on the server side. For documentation, please see doc/BUILD_CUSTOMIZATION.md.
+|supported `candidate`
+
+|build.flags
+|string
+|
+|A set of space separated flags to customize the build. Must be provided in Branding.plist at build time. For documentation, please see doc/BUILD_CUSTOMIZATION.md.
+|supported `candidate`
+
 |===
+end::build[]
+
+
+tag::connection[]
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -630,7 +741,7 @@ The following placeholders can be used to make it dynamic:
 |stringArray
 |
 |Allows fine-tuning the behavior of the connection validator by enabling/disabling aspects of it.
-[cols="1,2"]
+[cols="1,1"]
 !===
 ! Value
 ! Description
@@ -652,8 +763,8 @@ The following placeholders can be used to make it dynamic:
 
 |core.scan-for-changes-interval
 |int
-|`10`
-|Minimum number of seconds until the next scan for changes, measured from the completion of the previous scan.
+|
+|Minimum number of milliseconds until the next scan for changes, measured from the completion of the previous scan. If no value is provided, uses the poll interval provided in the server's capabilities (in milliseconds) if it is greater or equal 5 seconds. Defaults to 10 seconds otherwise.
 |advanced `candidate`
 
 |connection.allow-background-url-sessions
@@ -696,7 +807,7 @@ The following placeholders can be used to make it dynamic:
 |stringArray
 |`[]`
 |Active Host simulation extensions.
-[cols="1,2"]
+[cols="1,1"]
 !===
 ! Value
 ! Description
@@ -724,8 +835,8 @@ end::connection[]
 
 
 tag::diagnostics[]
-[cols="1,2,3,4a,5",options=header]
-|===
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -744,8 +855,8 @@ end::diagnostics[]
 
 
 tag::displaysettings[]
-[cols="1,2,3,4a,5",options=header]
-|===
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -776,8 +887,8 @@ end::displaysettings[]
 
 
 tag::endpoints[]
-[cols="1,2,3,4a,5",options=header]
-|===
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -850,8 +961,8 @@ end::endpoints[]
 
 
 tag::licensing[]
-[cols="1,2,3,4a,5",options=header]
-|===
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -875,9 +986,31 @@ tag::licensing[]
 end::licensing[]
 
 
-tag::logging[]
-[cols="1,2,3,4a,5",options=header]
+tag::localization[]
+[cols="2,1,1,2a,1",options=header]
+|=== 
+|Key
+|Type
+|Default
+|Description
+|Status
+
+
+|**Localization Overrides** +
+ +
+locale.overrides
+|dictionary
+|`map[]`
+|Dictionary with localization overrides where the key is the English string whose localization should be overridden, and the value is a dictionary where the keys are the language codes (f.ex. "en", "de") and the values the translations to use.
+|advanced `candidate`
+
 |===
+end::localization[]
+
+
+tag::logging[]
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -889,7 +1022,7 @@ tag::logging[]
 |int
 |`4`
 |Log level
-[cols="1,2"]
+[cols="1,1"]
 !===
 ! Value
 ! Description
@@ -937,7 +1070,7 @@ tag::logging[]
 |stringArray
 |`[writer.stderr writer.file]`
 |List of enabled logging system components.
-[cols="1,2"]
+[cols="1,1"]
 !===
 ! Value
 ! Description
@@ -961,7 +1094,7 @@ tag::logging[]
 |string
 |`text`
 |Determines the format that log messages are saved in
-[cols="1,2"]
+[cols="1,1"]
 !===
 ! Value
 ! Description
@@ -1031,8 +1164,8 @@ end::logging[]
 
 
 tag::oauth2[]
-[cols="1,2,3,4a,5",options=header]
-|===
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -1081,8 +1214,8 @@ end::oauth2[]
 
 
 tag::oidc[]
-[cols="1,2,3,4a,5",options=header]
-|===
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -1119,8 +1252,8 @@ end::oidc[]
 
 
 tag::passcode[]
-[cols="1,2,3,4a,5",options=header]
-|===
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -1131,7 +1264,13 @@ tag::passcode[]
 |passcode.enforced
 |bool
 |`false`
-|Controls wether the user MUST establish a passcode upon app installation
+|Controls wether the user MUST establish a passcode upon app installation.
+|advanced `candidate`
+
+|passcode.lockDelay
+|int
+|
+|Number of seconds before the lock snaps and the passcode is requested again.
 |advanced `candidate`
 
 |passcode.maximumPasscodeDigits
@@ -1146,13 +1285,19 @@ tag::passcode[]
 |Controls how many passcode digits are at least required for passcode lock.
 |advanced `candidate`
 
+|passcode.use-biometrical-unlock
+|bool
+|`false`
+|Controls wether the biometrical unlock will be enabled automatically.
+|advanced `candidate`
+
 |===
 end::passcode[]
 
 
 tag::policies[]
-[cols="1,2,3,4a,5",options=header]
-|===
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -1183,8 +1328,8 @@ end::policies[]
 
 
 tag::privacy[]
-[cols="1,2,3,4a,5",options=header]
-|===
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -1203,8 +1348,8 @@ end::privacy[]
 
 
 tag::releasenotes[]
-[cols="1,2,3,4a,5",options=header]
-|===
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -1229,8 +1374,8 @@ end::releasenotes[]
 
 
 tag::security[]
-[cols="1,2,3,4a,5",options=header]
-|===
+[cols="2,1,1,2a,1",options=header]
+|=== 
 |Key
 |Type
 |Default
@@ -1242,7 +1387,7 @@ tag::security[]
 |stringArray
 |
 |Array of allowed authentication methods. Nil/Missing for no restrictions.
-[cols="1,2"]
+[cols="1,1"]
 !===
 ! Value
 ! Description
@@ -1263,7 +1408,7 @@ tag::security[]
 |stringArray
 |`[com.owncloud.openid-connect com.owncloud.oauth2 com.owncloud.basicauth]`
 |Array of authentication methods in order of preference (most preferred first).
-[cols="1,2"]
+[cols="1,1"]
 !===
 ! Value
 ! Description
