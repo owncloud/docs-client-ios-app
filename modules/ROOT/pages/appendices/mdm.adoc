@@ -142,12 +142,6 @@ The localization feature allows to overwrite every string in the app, in every l
 
 include::./mdm_tables.adoc[tag=localization]
 
-=== Privacy ???
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci lorem, sagittis at mollis non, consequat a purus. Integer vestibulum luctus est id faucibus. Etiam euismod posuere tristique.
-
-include::./mdm_tables.adoc[tag=privacy]
-
 === Releasenotes
 
 include::./mdm_tables.adoc[tag=releasenotes]
