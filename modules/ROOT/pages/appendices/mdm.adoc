@@ -12,21 +12,23 @@
 
 // note that the attribute definition for linking the correct mdm file from the ios-repo (configuration.adoc) is maintained in antora.yml as this is branch specific and must be maintained per branch - in particular the mdm-tag-name attribute.
 
+:description: With the introduction of MDM (Mobile Device Management) by Apple for its devices, a MDM server can securely push a configuration to the iOS device, respectively recieve feedback from the device. ownCloud supports MDM for it's iOS-App.
+ 
 == Introduction
 
-Starting with iOS 7, Apple added support for {mdm-protocol-ref-url}[managed application configuration]. An MDM server can push a configuration to the iOS App. The app can access this configuration (read-only) using the `NSUserDefaults` class by reading a configuration dictionary under the key _com.apple.configuration.managed_. An app can also observe a system notification (_NSUserDefaultsDidChangeNotification_) to get notified about configuration changes. In addition feedback can be queried back by MDM server. To enable that, app has to write a dictionary with feedback information into user defaults under _com.apple.feedback.managed_ key. The configuration is basically a key-value dictionary provided as a `.plist` file.
+{description} The configuration is basically a key-value dictionary provided as a `.plist` file. The app can access this configuration from the server in read-only mode using the `NSUserDefaults` class by reading a configuration dictionary under the key `_com.apple.configuration.managed_`. The app can also observe a system notification via class `NSUserDefaultsDidChangeNotification` to get notified about configuration changes. For feedback, the app writes a dictionary with feedback information into user defaults under the `_com.apple.feedback.managed_` key.
 
 == Configurable Settings
 
-ownCloud App implements a mechanism internally called Class Settings which can be derived from different sources:
+The ownCloud iOS App implements a mechanism internally called Class Settings which can be derived from different sources:
 
-- Environment variables which e.g. can be set in Xcode for testing. In this case setting keys have to   be prepended with _oc:_ prefix.
+- Environment variables which e.g. can be set in Xcode for testing. In this case setting keys have to be prepended with _oc:_ prefix.
 - User preferences accessed by the very same API but stored under _org.owncloud.user-settings_ key.
 - Settings dictionary pushed by an MDM Server and accessible using `NSUserDefaults` API under the key   _com.apple.configuration.managed_.
 - Default settings defined directly in the app sourcecode.
 - Branding.plist which is the part of the Xcode project under ownCloud/Resources/Theming. It allows to   override class settings by specifying them in the `Configuration` section
 
-This is also an order in which these settings take precedence (environment variables have highest priority). So, when settings are accessed, they are merged and higher priority value for the same key overwrites lower priority ones.
+There is also an order in which these settings take precedence, where environment variables have highest priority. When settings are accessed, they are merged and higher priority value for the same key overwrites lower priority ones.
 
 Some settings are accessed only once at runtime and the read value is cached, so that new setting to take effect may a require an app to be terminated and restarted.
 
@@ -38,7 +40,7 @@ include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=app]
 
 === Extensions / Actions
 
-ownCloud app uses internally a plug-in like mechanism called extensions. Extensions are used to implement menu actions mostly found under "+" menu allowing to add new items (Upload media, take photo etc.) or in more menu (Copy, Move, Open in etc.). Using below settings actions / extensions can be disabled. Extensions are enabled by default, however this might depend on licensing requirements of a particular extension.
+The ownCloud iOS app uses internally a plug-in like mechanism called extensions. Extensions are used to implement menu actions mostly found under "+" menu allowing to add new items (Upload media, take photo etc.) or in more menu (Copy, Move, Open in etc.). Using below settings actions / extensions can be disabled. Extensions are enabled by default, however this might depend on licensing requirements of a particular extension.
 
 include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=actions]
 
