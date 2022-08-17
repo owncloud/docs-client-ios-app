@@ -10,21 +10,25 @@
 :appconfig-jam-url: https://appconfig.jamfresearch.com
 :mdm-protocol-refernce-url: https://developer.apple.com/business/documentation/MDM-Protocol-Reference.pdf
 
+// note that the attribute definition for linking the correct mdm file from the ios-repo (configuration.adoc) is maintained in antora.yml as this is branch specific and must be maintained per branch - in particular the mdm-tag-name attribute.
+
+:description: With the introduction of MDM (Mobile Device Management) by Apple for its devices, a MDM server can securely push a configuration to the iOS device, respectively recieve feedback from the device. ownCloud supports MDM for it's iOS-App.
+ 
 == Introduction
 
-Starting with iOS 7, Apple added support for {mdm-protocol-ref-url}[managed application configuration]. An MDM server can push a configuration to the iOS App. The app can access this configuration (read-only) using the `NSUserDefaults` class by reading a configuration dictionary under the key _com.apple.configuration.managed_. An app can also observe a system notification (_NSUserDefaultsDidChangeNotification_) to get notified about configuration changes. In addition feedback can be queried back by MDM server. To enable that, app has to write a dictionary with feedback information into user defaults under _com.apple.feedback.managed_ key. The configuration is basically a key-value dictionary provided as a `.plist` file.
+{description} The configuration is basically a key-value dictionary provided as a `.plist` file. The app can access this configuration from the server in read-only mode using the `NSUserDefaults` class by reading a configuration dictionary under the key `_com.apple.configuration.managed_`. The app can also observe a system notification via class `NSUserDefaultsDidChangeNotification` to get notified about configuration changes. For feedback, the app writes a dictionary with feedback information into user defaults under the `_com.apple.feedback.managed_` key.
 
 == Configurable Settings
 
-ownCloud App implements a mechanism internally called Class Settings which can be derived from different sources:
+The ownCloud iOS App implements a mechanism internally called Class Settings which can be derived from different sources:
 
-- Environment variables which e.g. can be set in Xcode for testing. In this case setting keys have to   be prepended with _oc:_ prefix.
+- Environment variables which e.g. can be set in Xcode for testing. In this case setting keys have to be prepended with _oc:_ prefix.
 - User preferences accessed by the very same API but stored under _org.owncloud.user-settings_ key.
 - Settings dictionary pushed by an MDM Server and accessible using `NSUserDefaults` API under the key   _com.apple.configuration.managed_.
 - Default settings defined directly in the app sourcecode.
 - Branding.plist which is the part of the Xcode project under ownCloud/Resources/Theming. It allows to   override class settings by specifying them in the `Configuration` section
 
-This is also an order in which these settings take precedence (environment variables have highest priority). So, when settings are accessed, they are merged and higher priority value for the same key overwrites lower priority ones.
+There is also an order in which these settings take precedence, where environment variables have highest priority. When settings are accessed, they are merged and higher priority value for the same key overwrites lower priority ones.
 
 Some settings are accessed only once at runtime and the read value is cached, so that new setting to take effect may a require an app to be terminated and restarted.
 
@@ -32,13 +36,13 @@ Some settings are accessed only once at runtime and the read value is cached, so
 
 There are few settings allowing to mark an app installation as BETA and e.g. to supress UIKit animation and review prompt.
 
-include::./mdm_tables.adoc[tag=app]
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=app]
 
 === Extensions / Actions
 
-ownCloud app uses internally a plug-in like mechanism called extensions. Extensions are used to implement menu actions mostly found under "+" menu allowing to add new items (Upload media, take photo etc.) or in more menu (Copy, Move, Open in etc.). Using below settings actions / extensions can be disabled. Extensions are enabled by default, however this might depend on licensing requirements of a particular extension.
+The ownCloud iOS app uses internally a plug-in like mechanism called extensions. Extensions are used to implement menu actions mostly found under "+" menu allowing to add new items (Upload media, take photo etc.) or in more menu (Copy, Move, Open in etc.). Using below settings actions / extensions can be disabled. Extensions are enabled by default, however this might depend on licensing requirements of a particular extension.
 
-include::./mdm_tables.adoc[tag=actions]
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=actions]
 
 (*) These extensions might require additional license (in-app purchase, enterprise version).
 
@@ -46,47 +50,105 @@ include::./mdm_tables.adoc[tag=actions]
 
 To customize file list UI behevior, following settings are available: 
 
-// include::./mdm_tables.adoc[tag=displaysettings]
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=displaysettings]
 
 === Passcode Enforcement
 
 If your organization policies require users to use a passcode as an additional security barrier for managed apps, the below setting will allow to enforce this requirement.
 
-include::./mdm_tables.adoc[tag=passcode]
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=passcode]
 
 === Bookmark
 
 Below settings allow to configure the app to use a certain server URL and even bind it to this URL only by setting the default non-editable.
 
-include::./mdm_tables.adoc[tag=bookmarks]
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=bookmarks]
 
 === Item Policies
 
-include::./mdm_tables.adoc[tag=policies]
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=policies]
 
 === Connection
 
-Settings concerinng HTTP user agent, cookies, background support etc.
+Settings concerning HTTP user agent, cookies, background support etc.
 
-include::./mdm_tables.adoc[tag=connection]
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=connection]
 
 ==== Server Endpoints
 
 Individually configurable endpoints of the ownCloud server instance.
 
-include::./mdm_tables.adoc[tag=endpoints]
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=endpoints]
 
 ==== Connection Authentication / Security
 
 Settings concerning certificate validation policies.
 
-include::./mdm_tables.adoc[tag=security]
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=security]
 
 ==== OAuth2 Based Authentication
 
 Settings allowing to configure OAuth2 based authentication.
 
-include::./mdm_tables.adoc[tag=oauth2]
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=oauth2]
+
+==== OpenID Connect (OIDC) parameters
+
+OpenID Connect (OIDC) parameters allow you fine-tune the behaviour, in case the Identity Provider (IdP) needs something special.
+
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=oidc]
+
+=== Logging
+
+Logging settings control the ammount and type of app internal log messages stored as text files and accessible via settings menu.
+
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=logging]
+
+=== Account Handling
+
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=account]
+
+=== Authentication Settings
+
+Authentication settings control the behaviour of the web-based login.
+
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=authentication]
+
+=== Browsersession (deprecated)
+
+Browsersession settings were extended, and are now included in `authentication.browser-session-class` (Authentication Settings)
+
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=browsersession]
+
+=== Branding Parameters
+
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=branding]
+
+===  Build Options
+
+The following build options are only available for configuring custom builds via the `Branding.plist` file. They can't be configured dynamically wih MDM: 
+
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=build]
+
+=== Diagnostics
+
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=diagnostics]
+
+=== Licensing
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci lorem, sagittis at mollis non, consequat a purus. Integer vestibulum luctus est id faucibus. Etiam euismod posuere tristique.
+
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=licensing]
+
+=== Localization feature
+
+The localization feature allows to overwrite every string in the app, in every language.
+
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=localization]
+
+=== Releasenotes
+
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=releasenotes]
 
 ////
 === Shortcuts
@@ -96,14 +158,8 @@ for certain actions. ownCloud app provides certain actions as shortcuts as well 
 account information, create folder and so on). However in some cases it might make sense to disable
 shortcuts to minimize security risks. It can be done using following option:
 
-include::./mdm_tables.adoc[tag=shortcuts]
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=shortcuts]
 ////
-
-=== Logging
-
-Logging settings control the ammount and type of app internal log messages stored as text files and accessible via settings menu.
-
-include::./mdm_tables.adoc[tag=logging]
 
 == AppConfig XML Schema
 

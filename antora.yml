@@ -7,3 +7,6 @@ nav:
 
 asciidoc:
   attributes:
+    mdm-base-url: 'https://raw.githubusercontent.com/owncloud/ios-app/'
+    mdm-file-url: '/doc/configuration.adoc'
+    mdm-tag-name: 'v11.10.0'
