@@ -136,8 +136,6 @@ include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=diagnostics]
 
 === Licensing
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci lorem, sagittis at mollis non, consequat a purus. Integer vestibulum luctus est id faucibus. Etiam euismod posuere tristique.
-
 include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=licensing]
 
 === Localization feature
