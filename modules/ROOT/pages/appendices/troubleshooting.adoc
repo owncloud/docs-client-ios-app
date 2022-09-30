@@ -43,7 +43,7 @@ Once these have been enabled:
 * Click btn:[Browse] at the end of the same settings page
 * Click btn:[Delete all] in the following settings page
 * Perform the steps to reproduce the error
-* Go back to the Logging settings and click btn:[Share log file]
+* Go back to the Logging settings click btn:[Browse] and click btn:[Share log file] (the rectangle with the arrow next to the log file)
 
 .All iOS App logging settings enabled and set
 image:appendices/troubleshooting/ios-app-settings-logging.png[ios-app-settings-logging, width=35%,pdfwidth=35%]
