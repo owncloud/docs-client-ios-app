@@ -45,9 +45,14 @@ Once these have been enabled:
 * Perform the steps to reproduce the error
 * Go back to the Logging settings click btn:[Browse] and click btn:[Share log file] (the rectangle with the arrow next to the log file)
 
+[caption=]
 .All iOS App logging settings enabled and set
-image:appendices/troubleshooting/ios-app-settings-logging.png[ios-app-settings-logging, width=35%,pdfwidth=35%]
-image:appendices/troubleshooting/ios-app-settings-logging1.png[ios-app-settings-logging, width=35%,pdfwidth=35%]
+[width=80%,cols="^.^35%,^.^5%,^.^35%",frame=none,grid=none]
+|===
+a| image::appendices/troubleshooting/ios-app-settings-logging.png[ios-app-settings-logging]
+a| *->*
+a| image::appendices/troubleshooting/ios-app-settings-logging1.png[ios-app-settings-logging]
+|===
 
 .Button to clear the logs
 image:appendices/troubleshooting/ios-app-settings-logging2.png[ios-app-settings-logging, width=35%,pdfwidth=35%]
