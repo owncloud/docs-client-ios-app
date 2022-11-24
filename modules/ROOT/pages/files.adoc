@@ -52,6 +52,9 @@ a| image::files/file-actions.jpg[File actions dialog for individual files in own
 a| image::files/file-actions-multiple-files-selected.png[File actions dialog for multiple-selected files in ownCloud's iOS App., width=100%,pdfwidth=100%]
 |===
 
+NOTE: The file size values differ depending on the client you are using. Some operating systems like iOS and macOS use the decimal system (power of 10) where 1kB or one kilobyte consists of 1000 bytes, while Linux, Android and Windows use the binary system (power of 2) where 1KB consists of 1024 bytes and is called a kibibyte. So no reason to worry if you see different file sizes in the desktop client and on your mobile device.
+
+
 == Navigate Folders
 
 There are two ways to navigate folders (outside of the root folder). To go back to the parent folder, tap btn:[Back] in the top left-hand corner. To navigate directly to *any* parent folder, tap on the current folder's name. When you do, you will see the names of all the parent folders, right up to the root folder, as in the image below.
