@@ -1,16 +1,16 @@
 = Managing Files
 :page-aliases: ios_files.adoc
 :toc: right
-
-:keywords: PDF, Drag & Drop, Photo Library, iPhone, iPad, ownCloud iOS App
 :description: This guide steps you through how to manage files and directories in ownCloud's iOS app; You will learn all about uploading, moving, dragging and dropping, and viewing files, file and folder actions, and navigating folders.
+:keywords: PDF, Drag & Drop, Photo Library, iPhone, iPad, ownCloud iOS App
+
 :ios-safari-supported-filetypes-url: https://stackoverflow.com/a/46334049
 :icons: font
 :multitasking-on-ipad-url: https://support.apple.com/en-us/HT207582
 
 == Introduction
 
-The IOS app provides a number of features designed to make managing files as simple as possible.
+{description}
 
 == Features
 
@@ -22,7 +22,7 @@ The IOS app provides a number of features designed to make managing files as sim
 * Folder actions
 * Select all/none
 
-image:files/21_File_list_annotated.png[Overview of the ownCloud iOS App's files view., width=60%,pdfwidth=60%]
+image::files/21_File_list_annotated.png[Overview of the ownCloud iOS App's files view., width=350]
 
 Click on a file to view it and click on a folder to view its contents. To view further actions available for a file or folder, click the _More_ icon on the far right-hand side.
 
@@ -48,8 +48,8 @@ However, file actions are handled slightly differently, depending on whether one
 | File popup for actions for _individual_ files
 | Move icon row for _multiple-selected_ files
 
-a| image::files/file-actions.jpg[File actions dialog for individual files in ownCloud's iOS App., width=60%,pdfwidth=60%]
-a| image::files/file-actions-multiple-files-selected.png[File actions dialog for multiple-selected files in ownCloud's iOS App., width=100%,pdfwidth=100%]
+a| image::files/file-actions.jpg[File actions dialog for individual files in ownCloud's iOS App., width=300]
+a| image::files/file-actions-multiple-files-selected.png[File actions dialog for multiple-selected files in ownCloud's iOS App., width=300]
 |===
 
 NOTE: The file size values differ depending on the client you are using. Some operating systems like iOS and macOS use the decimal system (power of 10) where 1kB or one kilobyte consists of 1000 bytes, while Linux, Android and Windows use the binary system (power of 2) where 1KB consists of 1024 bytes and is called a kibibyte. So no reason to worry if you see different file sizes in the desktop client and on your mobile device.
@@ -59,7 +59,7 @@ NOTE: The file size values differ depending on the client you are using. Some op
 
 There are two ways to navigate folders (outside of the root folder). To go back to the parent folder, tap btn:[Back] in the top left-hand corner. To navigate directly to *any* parent folder, tap on the current folder's name. When you do, you will see the names of all the parent folders, right up to the root folder, as in the image below.
 
-image:files/21_File_list_parent.png[Navigating folders in ownCloud's iOS app, width=35%,pdfwidth=35%]
+image::files/21_File_list_parent.png[Navigating folders in ownCloud's iOS app, width=200]
 
 == Navigate Files
 
@@ -67,7 +67,7 @@ When navigating files, as you would expect, you can scroll up and down the files
 
 NOTE: The index bar is only visible, if the sort order is `Name`.
 
-image:files/index-bar-with-callout.png[Navigating files in ownCloud's iOS app, width=40%,pdfwidth=40%]
+image::files/index-bar-with-callout.png[Navigating files in ownCloud's iOS app, width=350]
 
 == Sort Files and Folders
 
@@ -78,8 +78,8 @@ By default, files and folders are sorted by name in ascending order, with folder
 | *Sorting files and folders in portrait mode*
 | *Sorting files and folders in landscape mode*
 
-a| image:files/sort-files-portrait-mode.png[Sorting files and folders in portrait mode, width=80%,pdfwidth=80%]
-a| image:files/sort-files-landscape-mode.png[Sorting files and folders in landscape mode, width=80%,pdfwidth=80%]
+a| image::files/sort-files-portrait-mode.png[Sorting files and folders in portrait mode, width=250]
+a| image::files/sort-files-landscape-mode.png[Sorting files and folders in landscape mode, width=250]
 |===
 
 == View Files
@@ -90,11 +90,11 @@ To view a file, tap on its name in the file list. Any file type
 [NOTE]
 ====
 If the file is not available locally on the device, you will see
-image:files/icon-not-available-locally.png[alt=A file is not downloaded locally on the ownCloud iOS app, width=4%,pdfwidth=4%]
+image:files/icon-not-available-locally.png[alt=A file is not downloaded locally on the ownCloud iOS app, width=25]
 next to the file.
 
 When you click on it, you will see
-image:files/icon-download.png[alt=A file is downloading on the ownCloud iOS app, width=4%,pdfwidth=4%]
+image:files/icon-download.png[alt=A file is downloading on the ownCloud iOS app, width=22]
 next to it while it downloads.
 ====
 
@@ -104,16 +104,16 @@ next to it while it downloads.
 | An image file
 | A video file
 | A PDF file
-a| image::files/view-file-image.png[Viewing an image file in the ownCloud iOS App, width=60%,pdfwidth=60%]
-a| image::files/view-file-video.png[Viewing a video file in the ownCloud iOS App, width=60%,pdfwidth=60%]
-a| image::files/view-file-pdf.png[Viewing a PDF file in the ownCloud iOS App, width=60%,pdfwidth=60%]
+a| image::files/view-file-image.png[Viewing an image file in the ownCloud iOS App, width=250]
+a| image::files/view-file-video.png[Viewing a video file in the ownCloud iOS App, width=250]
+a| image::files/view-file-pdf.png[Viewing a PDF file in the ownCloud iOS App, width=250]
 
 | A text file
 | An ODT file.
 |
 
-a| image::files/view-file-text-file.png[Viewing a text file in the ownCloud iOS App, width=60%,pdfwidth=60%]
-a| image::files/view-file-odt.png[Viewing an ODT file in the ownCloud iOS App, width=60%,pdfwidth=60%]
+a| image::files/view-file-text-file.png[Viewing a text file in the ownCloud iOS App, width=250]
+a| image::files/view-file-odt.png[Viewing an ODT file in the ownCloud iOS App, width=250]
 |
 |===
 
@@ -136,10 +136,10 @@ You can see an example of each in the images below.
 | Page thumbnails
 | File search
 
-a| image::files/41_PDF.png[Page selector in PDF files in the ownCloud iOS App, width=60%,pdfwidth=60%]
-a| image::files/42_PDF_toc.png[Table of contents in PDF files in the ownCloud iOS App, width=60%,pdfwidth=60%]
-a| image::files/43_PDF_thumbs.png[Page thumbnails in PDF files in the ownCloud iOS App, width=60%,pdfwidth=60%]
-a| image::files/44_PDF_search.png[File search in PDF files in the ownCloud iOS App, width=60%,pdfwidth=60%]
+a| image::files/41_PDF.png[Page selector in PDF files in the ownCloud iOS App, width=250]
+a| image::files/42_PDF_toc.png[Table of contents in PDF files in the ownCloud iOS App, width=250]
+a| image::files/43_PDF_thumbs.png[Page thumbnails in PDF files in the ownCloud iOS App, width=250]
+a| image::files/44_PDF_search.png[File search in PDF files in the ownCloud iOS App, width=250]
 |===
 
 === Video Files
@@ -155,13 +155,13 @@ When working with folders, click the plus icon near the top right-hand corner, a
 * xref:upload-file-from-your-photo-library[Upload file from your photo library]
 * xref:make-available-offline[Make available offline]
 
-image:files/directory-actions.png[Folder actions in ownCloud's iOS App., width=35%,pdfwidth=35%]
+image::files/directory-actions.png[Folder actions in ownCloud's iOS App., width=250]
 
 === Create Folder
 
 To create a new folder, click btn:[Create folder], enter the name of the new folder, as in the image below, and click btn:[return].
 
-image:files/create-new-folder.png[How to create a new folder in ownCloud's iOS App., width=35%,pdfwidth=35%]
+image::files/create-new-folder.png[How to create a new folder in ownCloud's iOS App., width=250]
 
 === Upload Files
 
@@ -175,7 +175,7 @@ Please see the xref:available_offline.adoc[Offline Storage section].
 
 To upload photos from your photo library, you first need to allow the iOS app access to your photos. After that, you can browse through your photos, as you normally would. You can then select one or more photos by pressing them, or click btn:[Select All] in the bottom left-hand corner to select all photos in the current folder. When you're happy with your photo selection, click btn:[Upload] and the photo(s) will be uploaded.
 
-image:files/24_Upload_Photo_multi.png[Upload one or more photos from your Photo Library with the ownCloud iOS App., width=35%,pdfwidth=35%]
+image::files/24_Upload_Photo_multi.png[Upload one or more photos from your Photo Library with the ownCloud iOS App., width=250]
 
 === Move Files and Folders
 
@@ -184,13 +184,13 @@ Whether you are using the iPhone or iPad version of the ownCloud app, you can se
 * Drag and drop them over a folder in the current directory
 * Drag and drop them over the "*Move to*" icon (or tap the icon), near the bottom left-hand side of the screen. You then navigate to the folder that you want to move them to and click btn:[Move here] at the bottom of the screen.
 
-image:files/26_Files_multidragdrop.png[Move multiple files (and folders) to another location in the ownCloud iOS App., width=35%,pdfwidth=35%]
+image::files/26_Files_multidragdrop.png[Move multiple files (and folders) to another location in the ownCloud iOS App., width=250]
 
 [NOTE] 
 ====
 If a file or folder with the same name as one or more of those being moved, already exists in the destination directory, you will see a warning that the file or folder could not be moved.
 
-image:files/file-with-same-name-already-exists.png[ownCloud iOS App, file or folder with the same name already exists in the destination directory., width=40%,pdfwidth=40%]
+image::files/file-with-same-name-already-exists.png[ownCloud iOS App, file or folder with the same name already exists in the destination directory., width=250]
 ====
 
 == Drag & Drop Files Between Apps (iPad-only)
@@ -199,4 +199,4 @@ The iOS app supports the multitasking features on iPad. If you open it as a seco
 {multitasking-on-ipad-url}[Multitasking On Your iPad guide] for more information.
 
 .Drag and drop multiple files from ownCloud iOS App to macOS Notes
-image:files/26_Files_multidragdrop_iPad.png[Drag and Drop Files Between Apps (iPad-only) in ownCloud's iOS App., width=70%,pdfwidth=70%]
+image::files/26_Files_multidragdrop_iPad.png[Drag and Drop Files Between Apps (iPad-only) in ownCloud's iOS App., width=350]

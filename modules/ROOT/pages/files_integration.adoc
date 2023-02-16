@@ -1,13 +1,12 @@
 = iOS App and iOS Files App Integration and 3rd Party Apps
-:page-aliases: ios_files_integration.adoc
 :toc: right
-
+:description: This guide steps you through ownCloud's Mobile App for iOS’s integration with the iOS Files App. When enabled, you can open, edit, save, and delete files and folders.
 :keywords: Files App, iOS, iPhone, iPad, ownCloud
-:description: This guide steps you through ownCloud's Mobile App for iOS’s integration with the iOS Files App.
+:page-aliases: ios_files_integration.adoc
 
 == Introduction
 
-The Mobile App for iOS integrates with the iOS Files App. When enabled, you can open, edit, save, and delete files and folders. However, the functionality needs to first be enabled.
+{description} However, the functionality needs to first be enabled.
 
 == Work With Your ownCloud Data in iOS Files App
 
@@ -33,7 +32,7 @@ When the iOS app is installed and at least one account is properly configured, f
 | Pick a file to "Save to Files"
 | Pick the location to save the file and click "Add"
 
-a| image::files_integration/enable-location.png[Enable the ownCloud app as an iOS Files app location, width=60%,pdfwidth=60%]
-a| image::files_integration/share-files-from-other-apps-step-1.png[Pick a file to Save to Files, width=60%,pdfwidth=60%]
-a| image::files_integration/share-files-from-other-apps-step-2.png[Pick the location to save the file and click Add, width=60%,pdfwidth=60%]
+a| image::files_integration/enable-location.png[Enable the ownCloud app as an iOS Files app location, width=250]
+a| image::files_integration/share-files-from-other-apps-step-1.png[Pick a file to Save to Files, width=250]
+a| image::files_integration/share-files-from-other-apps-step-2.png[Pick the location to save the file and click Add, width=250]
 |===
