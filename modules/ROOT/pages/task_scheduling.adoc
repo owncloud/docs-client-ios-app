@@ -1,10 +1,11 @@
 = Task Scheduling
-:page-aliases: ios_task_scheduling.adoc
 :toc: right
+:description: Background tasks are scheduled based on the app's current context, and that context is based on a combination of factors.
+:page-aliases: ios_task_scheduling.adoc
 
 == Introduction
 
-Background tasks are scheduled based on the app's current context, and that context is based on a combination of factors. These factors include:
+{description} These factors include:
 
 * Is the app backgrounded or in the foreground?
 * Is WiFi available?

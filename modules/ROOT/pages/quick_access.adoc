@@ -1,15 +1,15 @@
 = Quick Access
 :page-aliases: ios_quick_access.adoc
 :toc: right
+:description: This guide steps you through how to use the Quick Access functionality of ownCloud's Mobile App for iOS.
 
 :keywords: shares, collection, recently access files, quick access, ownCloud, iOS, iPhone, iPad
-:description: This guide steps you through how to use the Quick Access functionality of ownCloud's Mobile App for iOS.
 
 == Introduction
 
-The app allows you to quickly access the key aspects of the application, by clicking btn:[Quick Access], located in the footer of the application.
+{description} To do so, click btn:[Quick Access], located in the footer of the application.
 
-image:quick-access/quick-access-view.png[Get quick access to the most important parts of ownCloud's iOS App for iPhone and iPad., width=35%,pdfwidth=35%]
+image::quick-access/quick-access-view.png[Get quick access to the most important parts of ownCloud's iOS App for iPhone and iPad., width=250]
 
 Quick access is broken down into two sections: _Shares_ and _Collection_.
 
