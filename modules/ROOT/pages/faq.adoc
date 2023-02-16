@@ -1,7 +1,8 @@
 = iOS Frequently Asked Questions (FAQ)
-:page-aliases: ios_faq.adoc
 :toc: right
-:hardbreaks:
+:description: Here you can find some of the most frequently asked questions about the ownCloud iOS app.
+:page-aliases: ios_faq.adoc
+
 :oauth2-app-url: https://marketplace.owncloud.com/apps/oauth2
 :ios-legacy-appstore-url: https://apps.apple.com/app/id543672169
 :ios-app-tx-url: https://www.transifex.com/owncloud-org/owncloud/mobile-ios-app/
@@ -10,7 +11,7 @@
 
 == Introduction
 
-Here you can find some of the most frequently asked questions about the ownCloud iOS app.
+{description}
 
 == Usage
 

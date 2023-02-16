@@ -1,6 +1,7 @@
 = Troubleshooting
-:page-aliases: ios_troubleshooting.adoc, troubleshooting.adoc
 :toc: right
+:description: If you experience problems while using the iOS app, you can use this guide to hopefully find a solution.
+:page-aliases: ios_troubleshooting.adoc, troubleshooting.adoc
 
 :keywords: troubleshooting, logging, debugging, mitmproxy, charles for iOS, ownCloud, iOS, iPhone, iPad
 :description: This guide steps you through how to troubleshoot issues with ownCloud's iOS App for iPhone and iPad. Specifically, it shows how to configure logging, and troubleshoot using mitmproxy and Charles for iOS.
@@ -13,7 +14,7 @@
 
 == Introduction
 
-If you experience problems while using the iOS app, you can use this guide to hopefully find a solution.
+{description}
 
 == Logging
 
@@ -49,13 +50,17 @@ Once these have been enabled:
 .All iOS App logging settings enabled and set
 [width=80%,cols="^.^35%,^.^5%,^.^35%",frame=none,grid=none]
 |===
-a| image::appendices/troubleshooting/ios-app-settings-logging.png[ios-app-settings-logging]
+a| image::appendices/troubleshooting/ios-app-settings-logging.png[ios-app-settings-logging, width=250]
 a| *->*
-a| image::appendices/troubleshooting/ios-app-settings-logging1.png[ios-app-settings-logging]
+a| image::appendices/troubleshooting/ios-app-settings-logging1.png[ios-app-settings-logging, width=250]
 |===
 
+[caption=]
 .Button to clear the logs
-image:appendices/troubleshooting/ios-app-settings-logging2.png[ios-app-settings-logging, width=35%,pdfwidth=35%]
+[width=37%,cols="^.^35%",frame=none,grid=none]
+|===
+a| image:appendices/troubleshooting/ios-app-settings-logging2.png[ios-app-settings-logging, width=250]
+|===
 
 === ownCloud's Log File
 
@@ -66,7 +71,7 @@ menu:Settings[General (Admin)]. On that page, you can adjust the log level.
 We recommend that you set it to a verbose level such as either `debug` or `info`.
 
 .Configuring logging in ownCloud server.
-image:appendices/troubleshooting/owncloud-log-configuration.png[Configuring logging in ownCloud server. ,width=40%,pdfwidth=40%]
+image::appendices/troubleshooting/owncloud-log-configuration.png[Configuring logging in ownCloud server., width=350]
 
 === Web Server Log Files
 
@@ -122,7 +127,7 @@ If you need to check the traffic between ownCloud and the iOS App, we recommend 
 {mitmproxy-url}[mitmproxy] is an interactive man-in-the-middle proxy for HTTP and HTTPS with a console interface.
 At ownCloud, we use it a lot to investigate every detail of HTTP requests and responses.
 
-image:appendices/troubleshooting/mitmproxy_screenshot.png[mitmproxy sample output, width=100%,pdfwidth=100%]
+image::appendices/troubleshooting/mitmproxy_screenshot.png[mitmproxy sample output, width=500]
 
 === Charles for iOS
 

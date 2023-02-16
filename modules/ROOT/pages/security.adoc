@@ -1,7 +1,7 @@
 = Security
 :page-aliases: ios_security.adoc
 :toc: right
-// :toclevels: 1
+:description: This document provides an overview of the security considerations and features
 
 :keywords: ownCloud, security, encryption, mdm, ssl, tls, oauth2, authentication, ios, iphone, ipad
 :description: This guide steps you through the security features of of ownCloud's Mobile App for iOS.
@@ -27,7 +27,7 @@
 
 == Introduction
 
-This document provides an overview of the security considerations and features in the new {owncloud-ios-sdk}[ownCloud iOS SDK] and new {owncloud-ios-app}[ownCloud iOS App].
+{description} in the new {owncloud-ios-sdk}[ownCloud iOS SDK] and new {owncloud-ios-app}[ownCloud iOS App].
 
 == Authentication
 
@@ -89,7 +89,7 @@ If a SSL/TLS certificate fails trust evaluation (e.g., because it's self-signed 
 * Trust the certificate, despite the warnings, by clicking btn:[Approve].
 * Reject the certificate, by clicking btn:[Cancel].
 
-image:security/04_cert_error.png[Review SSL/TLS certificates in the ownCloud iOS app., width=35%,pdfwidth=35%]
+image::security/04_cert_error.png[Review SSL/TLS certificates in the ownCloud iOS app., width=250]
 
 In the case of redirects across several HTTPS servers, users are given the opportunity to review the certificates of all servers involved in addition to the redirects.
 
