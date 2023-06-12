@@ -43,20 +43,15 @@ These are the changes necessary to finalize the creation of the 12.x branch.
 
 The 12.x branch is already pushed and prepared and is included in the branch protection rules.
 
-When 12.x (iOS-App) is finally out, the 12.x-2 branch can be archived,
-see step 4 in https://github.com/owncloud/docs-client-ios-app/blob/master/docs/new-version-branch.md
+When 12.x (iOS-App) is finally out, the 12.x-2 branch can be archived, see step 4 in https://github.com/owncloud/docs-client-ios-app/blob/master/docs/new-version-branch.md
 
-Note, that the 12.x branch in this repo is already created, but the `latest` pointer on the web
-will be set to it automatically when the tag in iOS-App repo is set. This means, that in the docs homepage,
-`latest` will point to 12.x-1 until the tag in iOS-App repo is set accordingly. When merging this PR,
-12.x-2 will be dropped from the web but is available via pdf as usual.
+Note, that the 12.x branch in this repo is already created, but the `latest` pointer on the web will be set to it automatically when the tag in iOS-App repo is set. This means, that in the docs homepage, `latest` will point to 12.x-1 until the tag in iOS-App repo is set accordingly. When merging this PR, 12.x-2 will be dropped from the web but is available via pdf as usual.
 
 Note, this PR must be merged before the 12.x tag in the iOS-App repo is set to avoid a 404 for `latest`.
 
 Note that a PR in docs must be made to announce the 12.x branch. The docs PR must be merged AFTER this PR is merged to avoid a CI error in docs.
 
-Before merging this PR, we should take care that 12.x-2 has all changes necessary merged as post
-merging the 12.x-2 pdf is fixed.
+Before merging this PR, we should take care that 12.x-2 has all changes necessary merged as post merging the 12.x-2 pdf is fixed.
 
 @michaelstingl @hosy fyi
 
