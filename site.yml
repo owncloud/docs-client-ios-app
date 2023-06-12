@@ -28,8 +28,8 @@ asciidoc:
     idseparator: '-'
     experimental: ''
 #   ios-app
-    latest-ios-app-version: '11.11'
-    previous-ios-app-version: '11.10'
+    latest-ios-app-version: '12.0'
+    previous-ios-app-version: '11.11'
   extensions:
     - ./lib/extensions/tabs.js
     - ./lib/extensions/remote-include-processor.js
