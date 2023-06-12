@@ -1,6 +1,6 @@
 name: ios-app
 title: Mobile App for iOS (iOS 11+)
-version: 'next'
+version: '12.0'
 start_page: ROOT:index.adoc
 nav:
 - modules/ROOT/partials/nav.adoc
@@ -9,4 +9,4 @@ asciidoc:
   attributes:
     mdm-base-url: 'https://raw.githubusercontent.com/owncloud/ios-app/'
     mdm-file-url: '/doc/configuration.adoc'
-    mdm-tag-name: 'master'
+    mdm-tag-name: 'v12.0.0'
