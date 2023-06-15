@@ -4,10 +4,10 @@
 :page-aliases: ios_mdm.adoc
 
 :keywords: ownCloud, MDM, Mobile Device Management, iOS, iPhone, iPad
-:appconfig-xml-format-url: https://www.appconfig.org/ios/
-:mdm-protocol-ref-url: https://developer.apple.com/business/documentation/MDM-Protocol-Reference.pdf
 :appconfig-url: https://www.appconfig.org
+:appconfig-xml-format-url: https://www.appconfig.org/ios.html
 :appconfig-jam-url: https://appconfig.jamfresearch.com
+:mdm-protocol-ref-url: https://developer.apple.com/business/documentation/MDM-Protocol-Reference.pdf
 :mdm-protocol-refernce-url: https://developer.apple.com/business/documentation/MDM-Protocol-Reference.pdf
 
 // note that the attribute definition for linking the correct mdm file from the ios-repo (configuration.adoc) is maintained in antora.yml as this is branch specific and must be maintained per branch - in particular the mdm-tag-name attribute.
@@ -163,7 +163,7 @@ include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=shortcuts]
 
 {appconfig-xml-format-url}[The XML format], developed by AppConfig community, makes it easy for developers to define and deploy an app configuration. It not only supports configuration variables having default values, but also provides a configuration UI description, which can be interpreted by the tool and which generates a plist file. Moreover, specfile XML is consistently supported by major EMM vendors.
 
-AppConfig conformant spec file tailored to administrator needs and containing one or more of the above settings can be easily created using {appconfig-url}/www/appconfigspeccreator/[Config Spec Creator] tool hosted at {appconfig-url}[AppConfig website].
+AppConfig conformant spec file tailored to administrator needs and containing one or more of the above settings can be easily created using {appconfig-url}content/dam/app-config/configspecgenerator/index.html[Config Spec Creator] tool hosted at {appconfig-url}[AppConfig website].
 
 == Example: Deployment With MobileIron
 
