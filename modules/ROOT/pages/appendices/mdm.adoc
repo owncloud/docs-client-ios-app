@@ -46,6 +46,12 @@ include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=actions]
 
 (*) These extensions might require additional license (in-app purchase, enterprise version).
 
+=== File Provider
+
+To control support for File Provider / Files.app.
+
+include::{mdm-base-url}{mdm-tag-name}{mdm-file-url}[tag=fileprovider]
+
 === Display Settings
 
 To customize file list UI behevior, following settings are available: 
