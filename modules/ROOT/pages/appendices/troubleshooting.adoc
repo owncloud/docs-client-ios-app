@@ -61,30 +61,35 @@ a| image:appendices/troubleshooting/ios-app-settings-logging2.png[ios-app-settin
 |===
 
 
- ==== Log HTTP requests and responses
+==== Log HTTP Requests and Responses
 
- If HTTP logging is enabled, log files will contain additional entries:
+If HTTP logging is enabled, log files will contain additional entries:
 
- [source,plaintext]
- ----
+[source,plaintext]
+----
 2023-09-01 17:18:35.107000+0200 ownCloud[8828:307914] [dbug] | [HTTP, Request, …] Sending request:
 2023-09-01 17:18:35.332000+0200 ownCloud[8828:307914] [dbug] | [HTTP, Response, …] Received response:
- ----
+----
 
- [cols="25%,75%",options="header"]
- |===
- | Log Content
- | Description
+{empty} +
 
- | `2023-09-01 17:18:35.107000+0200`
- | Timestamp with timezone
- | `ownCloud`
- | ownCloud app or FileProvider process
- | `[HTTP, Request, …]`
- | Log item category label
- | `RequestID:58453BEE-EEB5-44FB-9E1D-5230EE56AF38`
- | `X-REQUEST-ID` to find corresponding requests and responses and to find related entries in `owncloud.log` or Apache logs
- |===
+[cols="25%,75%",options="header"]
+|===
+| Log Content
+| Description
+
+| `2023-09-01 17:18:35.107000+0200`
+| Timestamp with timezone.
+
+| `ownCloud`
+| ownCloud app or FileProvider process.
+
+| `[HTTP, Request, …]`
+| Log item category label.
+
+| `RequestID:58453BEE-EEB5-44FB-9E1D-5230EE56AF38`
+| `X-REQUEST-ID` to find corresponding requests and responses and to find related entries in `owncloud.log` or Apache logs.
+|===
 
 === ownCloud's Log File
 
