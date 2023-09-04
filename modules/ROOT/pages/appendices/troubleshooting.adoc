@@ -4,7 +4,7 @@
 :page-aliases: ios_troubleshooting.adoc, troubleshooting.adoc
 
 :keywords: troubleshooting, logging, debugging, mitmproxy, charles for iOS, ownCloud, iOS, iPhone, iPad
-:description: This guide steps you through how to troubleshoot issues with ownCloud's iOS App for iPhone and iPad. Specifically, it shows how to configure logging
+:description: This guide takes you step by step through how to troubleshoot issues with ownCloud's iOS App for iPhone and iPad. In particular, it shows how to configure logging.
 :apache-logging-url: http://httpd.apache.org/docs/current/logs.html
 :create-screen-recording-url: https://support.apple.com/en-us/HT207935
 :owncloud-logging-url: https://doc.owncloud.com/server/latest/admin_manual/configuration/server/logging_configuration.html
@@ -63,7 +63,7 @@ a| image:appendices/troubleshooting/ios-app-settings-logging2.png[ios-app-settin
 
  ==== Log HTTP requests and responses
 
- When HTTP logging is enabled, log files will contain additional entries:
+ If HTTP logging is enabled, log files will contain additional entries:
 
  [source,plaintext]
  ----
