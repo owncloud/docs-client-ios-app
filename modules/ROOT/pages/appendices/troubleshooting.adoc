@@ -4,11 +4,9 @@
 :page-aliases: ios_troubleshooting.adoc, troubleshooting.adoc
 
 :keywords: troubleshooting, logging, debugging, mitmproxy, charles for iOS, ownCloud, iOS, iPhone, iPad
-:description: This guide steps you through how to troubleshoot issues with ownCloud's iOS App for iPhone and iPad. Specifically, it shows how to configure logging, and troubleshoot using mitmproxy and Charles for iOS.
+:description: This guide takes you step by step through how to troubleshoot issues with ownCloud's iOS App for iPhone and iPad. In particular, it shows how to configure logging.
 :apache-logging-url: http://httpd.apache.org/docs/current/logs.html
-:charles-web-debugging-proxy-url: https://www.charlesproxy.com/documentation/ios/
 :create-screen-recording-url: https://support.apple.com/en-us/HT207935
-:mitmproxy-url: https://mitmproxy.org/
 :owncloud-logging-url: https://doc.owncloud.com/server/latest/admin_manual/configuration/server/logging_configuration.html
 :owncloud-log-tracing-url: https://doc.owncloud.com/server/latest/admin_manual/configuration/server/request_tracing.html
 
@@ -62,6 +60,37 @@ a| image::appendices/troubleshooting/ios-app-settings-logging1.png[ios-app-setti
 a| image:appendices/troubleshooting/ios-app-settings-logging2.png[ios-app-settings-logging, width=250]
 |===
 
+
+==== Log HTTP Requests and Responses
+
+If HTTP logging is enabled, log files will contain additional entries:
+
+[source,plaintext]
+----
+2023-09-01 17:18:35.107000+0200 ownCloud[8828:307914] [dbug] | [HTTP, Request, …] Sending request:
+2023-09-01 17:18:35.332000+0200 ownCloud[8828:307914] [dbug] | [HTTP, Response, …] Received response:
+----
+
+{empty} +
+
+[cols="25%,75%",options="header"]
+|===
+| Log Content
+| Description
+
+| `2023-09-01 17:18:35.107000+0200`
+| Timestamp with timezone.
+
+| `ownCloud`
+| ownCloud app or FileProvider process.
+
+| `[HTTP, Request, …]`
+| Log item category label.
+
+| `RequestID:58453BEE-EEB5-44FB-9E1D-5230EE56AF38`
+| `X-REQUEST-ID` to find corresponding requests and responses and to find related entries in `owncloud.log` or Apache logs.
+|===
+
 === ownCloud's Log File
 
 ownCloud server maintains an {owncloud-logging-url}[ownCloud-specific log file]. You can view the file using either the web interface or you can open it directly from the file system in your ownCloud server's data directory.
@@ -82,53 +111,7 @@ The ownCloud iOS app sends the `X-REQUEST-ID` header with every request. You'll 
 `X-REQUEST-ID` to the logs. Here you can find more information at
 {owncloud-log-tracing-url}[Request Tracing]
 
-Some helpful files include the following:
-
-error_logx:: Maintains errors associated with PHP code.
-access_log:: Typically records all requests handled by the server; handy as a debugging tool,
-because the log line contains information specific to each request and its result.
-
-Below, you can find where the error logs are typically located, based on operating system and web server.
-
-[cols=",,",options="header"]
-|===
-|Operating System
-|Web Server
-|File Location
-
-.3+|Linux
-|Apache |`/var/log/apache2`
-|NGINX |`/var/log/nginx`
-|Lighttpd |`/var/log/lighttpd`
-
-.2+|Windows
-|Apache
-|The Windows Event Log or in the `logs` directory relative to the Apache installation directory.
-|NGINX
-|Commonly in the `logs` directory relative to the NGINX installation directory.
-|===
-
-TIP: You can always check your web server's configuration to know where the log files are located.
-
 === Recording the Screen
 
 In iOS 11 or later, you can create a screen recording to better illustrate an error.
 If you are not familiar with creating one, {create-screen-recording-url}[follow these instructions].
-
-== Debugging Tools
-
-If you need to check the traffic between ownCloud and the iOS App, we recommend two tools:
-
-* xref:mitmproxy[mitmproxy]
-* xref:charles-for-ios[Charles for iOS]
-
-=== mitmproxy
-
-{mitmproxy-url}[mitmproxy] is an interactive man-in-the-middle proxy for HTTP and HTTPS with a console interface.
-At ownCloud, we use it a lot to investigate every detail of HTTP requests and responses.
-
-image::appendices/troubleshooting/mitmproxy_screenshot.png[mitmproxy sample output, width=500]
-
-=== Charles for iOS
-
-{charles-web-debugging-proxy-url}[The Charles proxy for iOS] works similarly to mitmproxy. However, it's more user-friendly, runs on the iOS device, _and_ has a beautiful UI. It also supports split view on iPads so that you can work with the ownCloud iOS app and Charles side-by-side.
