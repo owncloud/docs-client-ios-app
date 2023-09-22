@@ -1,5 +1,6 @@
 = Mobile Device Management (MDM)
 :toc: right
+:toclevels: 3
 :description: With the introduction of MDM (Mobile Device Management) by Apple for its devices, a MDM server can securely push a configuration to the iOS device, respectively recieve feedback from the device. ownCloud supports MDM for it's iOS-App.
 :page-aliases: ios_mdm.adoc
 
