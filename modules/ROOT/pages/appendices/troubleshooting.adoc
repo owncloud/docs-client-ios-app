@@ -1,5 +1,6 @@
 = Troubleshooting
 :toc: right
+:toclevels: 3
 :description: If you experience problems while using the iOS app, you can use this guide to hopefully find a solution.
 :page-aliases: ios_troubleshooting.adoc, troubleshooting.adoc
 
@@ -82,35 +83,7 @@ The ownCloud iOS app sends the `X-REQUEST-ID` header with every request. You'll 
 `X-REQUEST-ID` to the logs. Here you can find more information at
 {owncloud-log-tracing-url}[Request Tracing]
 
-Some helpful files include the following:
-
-error_logx:: Maintains errors associated with PHP code.
-access_log:: Typically records all requests handled by the server; handy as a debugging tool,
-because the log line contains information specific to each request and its result.
-
-Below, you can find where the error logs are typically located, based on operating system and web server.
-
-[cols=",,",options="header"]
-|===
-|Operating System
-|Web Server
-|File Location
-
-.3+|Linux
-|Apache |`/var/log/apache2`
-|NGINX |`/var/log/nginx`
-|Lighttpd |`/var/log/lighttpd`
-
-.2+|Windows
-|Apache
-|The Windows Event Log or in the `logs` directory relative to the Apache installation directory.
-|NGINX
-|Commonly in the `logs` directory relative to the NGINX installation directory.
-|===
-
-TIP: You can always check your web server's configuration to know where the log files are located.
-
-=== Recording the Screen
+== Recording the Screen
 
 In iOS 11 or later, you can create a screen recording to better illustrate an error.
 If you are not familiar with creating one, {create-screen-recording-url}[follow these instructions].
