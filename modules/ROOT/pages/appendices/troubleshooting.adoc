@@ -1,5 +1,6 @@
 = Troubleshooting
 :toc: right
+:toclevels: 3
 :description: If you experience problems while using the iOS app, you can use this guide to hopefully find a solution.
 :page-aliases: ios_troubleshooting.adoc, troubleshooting.adoc
 
@@ -111,7 +112,7 @@ The ownCloud iOS app sends the `X-REQUEST-ID` header with every request. You'll 
 `X-REQUEST-ID` to the logs. Here you can find more information at
 {owncloud-log-tracing-url}[Request Tracing]
 
-=== Recording the Screen
+== Recording the Screen
 
 In iOS 11 or later, you can create a screen recording to better illustrate an error.
 If you are not familiar with creating one, {create-screen-recording-url}[follow these instructions].
