@@ -10,3 +10,5 @@ asciidoc:
     mdm-base-url: 'https://raw.githubusercontent.com/owncloud/ios-app/'
     mdm-file-url: '/doc/configuration.adoc'
     mdm-tag-name: 'master'
+    latest-ios-app-version: {page-component-version}   # do not change, this is the value of the version key
+    previous-ios-app-version: {page-component-version} # do not change, this is the value of the version key
