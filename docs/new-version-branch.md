@@ -49,7 +49,7 @@ These are the changes necessary to finalize the creation of the 11.x branch.
 
 * The 12.x branch is already pushed and prepared and is included in the branch protection rules.
 
-* When 12.x (core) is finally out, the 12.x-2 branch can be archived, see step 3 in [Create a New Version Branch](https://github.com/owncloud/docs-client-desktop/blob/master/docs-client-ios-app/new-version-branch.md)
+* When 12.x (core) is finally out, the 12.x-2 branch can be archived, see step 3 in [Create a New Version Branch](https://github.com/owncloud/docs-client-ios-app/blob/master/docs/new-version-branch.md)
 
 * Note, that the 12.x branch in this repo is already created, but the `latest` pointer on the web will be set to it automatically when the tag in core is set. This means, that in the docs homepage, `latest` will point to 12.x-1 until the tag in core is set accordingly. When merging this PR, 12.x-2 will be dropped from the web.
 
