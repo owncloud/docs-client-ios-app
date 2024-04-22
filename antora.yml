@@ -1,6 +1,6 @@
 name: ios-app
 title: Mobile App for iOS
-version: 'next'
+version: '12.1'
 start_page: ROOT:index.adoc
 nav:
 - modules/ROOT/partials/nav.adoc
