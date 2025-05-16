@@ -91,7 +91,7 @@ Currently on draft to avoid accidentally merging before x.y is finally out.
 Only merge close before the product tag gets released.
 
 When this PR is merged, the dropped branch can be archived.
-For more details see the `Create a New Version Branch` section in the README.md of the respective docs-xxx repo repo.
+For more details see the `Create a New Version Branch` section in the README.md of the respective docs-xxx repo.
 
 The `latest` pointer on the web will be set automatically when the tag in the product repo is set.
 
