@@ -28,4 +28,3 @@ jobs:
 
       - name: Build documentation
         run: npm run antora
-
