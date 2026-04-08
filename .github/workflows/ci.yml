@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - master
-      - '10.16'
+      - '12.6'
+      - '12.5'
     tags:
       - '**'
   pull_request:
