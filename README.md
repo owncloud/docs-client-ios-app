@@ -1,5 +1,9 @@
 # iOS App Documentation
 
+**IMPORTANT**
+
+Since April 2026, this repository requires [Commit Signing](https://docs.github.com/articles/about-gpg) and uses [Conventional Commits](https://www.conventionalcommits.org) for commits and the Pull Request title.
+
 **Table of Contents**
 
 * [Building the iOS Docs](#building-the-ios-docs)
