@@ -1,6 +1,6 @@
 name: ios-app
 title: Mobile App for iOS
-version: 'next'
+version: '12.7'
 prerelease: true
 start_page: ROOT:index.adoc
 nav:
