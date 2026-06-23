@@ -15,9 +15,9 @@
 
 == Usage
 
-=== Compatibility With ownCloud Server Older Than Version 10.0
+=== Compatibility With ownCloud Classic Older Than Version 10.0
 
-Previous ownCloud iOS app with support for ownCloud Server < 10.0 is still available in {ios-legacy-appstore-url}[App Store].
+Previous ownCloud iOS app with support for ownCloud Classic < 10.0 is still available in {ios-legacy-appstore-url}[App Store].
 
 === Compatibility With iOS Versions Older Than iOS 12.0
 
